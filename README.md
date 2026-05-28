@@ -45,7 +45,7 @@ For 2022, the raw files (zipped .sas7bdat) can be downloaded from https://www.oe
 
 
 ### Prova Brasil
-Prova Brasil (renamed Sistema de Avaliacao da Educacao Basica (Saeb) in 2018) is test for assessing the level of education in Brazilian schools conducted by the Instituto Nacional de Estudos e Pesquisas Educacionais Anisio Teixeira (INEP) every two years. We utilized data from 2005 to 2017. The raw files are publicly available. All raw files can be downloaded in INEP's website (https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/saeb) by clicking in "Microdados do Saeb {year}". A copy of those files is provided as part of this archive. However, the school identification code where masked in the currently available public files, because of changes in the Brazilian Data Protection Law (*Lei Geral de Proteção de Dados*, LGPD, Law number 13.709 from 2018). Nevertheless, a copy of those not public available anymore files is provided as part of this archive.
+Prova Brasil (renamed Sistema de Avaliacao da Educacao Basica (Saeb) in 2018) is test for assessing the level of education in Brazilian schools conducted by the Instituto Nacional de Estudos e Pesquisas Educacionais Anisio Teixeira (INEP) every two years. We utilized data from 2005 to 2017. The raw files are publicly available. All raw files can be downloaded in INEP's website (https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/saeb) by clicking in "Microdados do Saeb {year}". A copy of these files can provided upon request if they cannot be found online. The school identification code where masked in the currently available public files, because of changes in the Brazilian Data Protection Law (*Lei Geral de Proteção de Dados*, LGPD, Law number 13.709 from 2018).  
 
 **Location in repository:** input/PB
 **License: ** [CC BY-ND 3.0 Attribution-NoDerivs 3.0 Unported](https://creativecommons.org/licenses/by-nd/3.0/deed.en)
@@ -53,7 +53,7 @@ Prova Brasil (renamed Sistema de Avaliacao da Educacao Basica (Saeb) in 2018) is
 
 
 ### Censo Escolar
-Censo Escolar is a census conducted year in every Brazilian school by the INEP, gathering data about infrastructure, teacher and student enrollment. We use data from 2005 to 2017. Some of raw files are publicly available. They can be downloaded in INEP's website (https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/censo-escolar) by clicking in "Microdados do Censo Escolar {year}". However, **the student-level tables**, that used to be public available, are not anymore because of changes in the Brazilian Data Protection Law (*Lei Geral de Proteção de Dados*, LGPD, Law number 13.709 from 2018). Nevertheless, a copy of those files is provided as part of this archive, and they can also be access in [Base dos Dados](https://basedosdados.org/dataset/dae21af4-4b6a-42f4-b94a-4c2061ea9de5?table=a1cdb042-073e-4891-ad98-67e0bef5d18e).
+Censo Escolar is a census conducted year in every Brazilian school by the INEP, gathering data about infrastructure, teacher and student enrollment. We use data from 2005 to 2017. Some of raw files are publicly available. They can be downloaded in INEP's website (https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/censo-escolar) by clicking in "Microdados do Censo Escolar {year}". However, **the student-level tables**, that used to be public available are no longer available because of changes in the Brazilian Data Protection Law (*Lei Geral de Proteção de Dados*, LGPD, Law number 13.709 from 2018). A copy of those files can be provided upon request, but they can also be accessed via [Base dos Dados](https://basedosdados.org/dataset/dae21af4-4b6a-42f4-b94a-4c2061ea9de5?table=a1cdb042-073e-4891-ad98-67e0bef5d18e).
 
 **Location in repository:** input/Censo Escolar
 **License: ** [CC BY-ND 3.0 Attribution-NoDerivs 3.0 Unported](https://creativecommons.org/licenses/by-nd/3.0/deed.en)
@@ -69,7 +69,7 @@ These datasets represent the combination of World Management Survey (WMS) (Bloom
 
 
 ### Replication File of Akhtari et al. (2022)
-The replication file (Moreira et al., 2021) of the paper 'Political Turnover, Bureaucratic Turnover and the Quality of Public Services' by Mitra Akhtari, Diana Moreira and Laura Trucco provides us with data of elections in Brazilian municipalities. The replication file can be downloaded from https://www.openicpsr.org/openicpsr/project/150323/version/V1/view. A copy of those files is provided as part of this archive.
+The replication file (Moreira et al., 2021) of the paper 'Political Turnover, Bureaucratic Turnover and the Quality of Public Services' by Mitra Akhtari, Diana Moreira and Laura Trucco provides us with data of elections in Brazilian municipalities. The replication file can be downloaded from https://www.openicpsr.org/openicpsr/project/150323/version/V1/view. 
 
 **Location in repository:** input/Akhtari et al. (2022)
 **License: ** [CC BY-NC 4.0 Attribution-NonCommercial 4.0 International](https://creativecommons.org/licenses/by-nc/4.0/)
