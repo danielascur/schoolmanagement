@@ -1,6 +1,6 @@
 ## Overview
 
-The code in this replication package use Stata to produce all results of the paper "Understanding school management with public data: A new measurement approach and application". The master file run all data creation and analysis do files, generating all exhibits in the paper. The replicator should expect the code to run for about 10 days. Instructions on how to download the data are included in this package. The data itself is public, but not included as the files total almost 300GB. Please contact Daniela Scur if you cannot find any of the files online. 
+The code in this replication package use Stata to produce all results of the paper "Understanding school management with public data: A new measurement approach and application". The master file run all data creation and analysis do files, generating all exhibits in the paper. The replicator should expect the code to run for about 10 days. Instructions on how to download the data are included in this package. The data itself is public, but not included as the files total over 360GB. Please contact Daniela Scur if you cannot find any of the files online. 
 
 
 ## Data Availability and Provenance Statements
