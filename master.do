@@ -116,7 +116,7 @@ global region "fcolor(white) lcolor(white) ifcolor(white) ilcolor(white)"
 *-----------------------------------------*
 
 // Cleaning
-*do "cleaning/1_pisa2012_cleaning.do" 
+do "cleaning/1_pisa2012_cleaning.do" 
 
 	display "End of PISA 2012"
 

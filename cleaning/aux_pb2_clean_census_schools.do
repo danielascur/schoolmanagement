@@ -25,19 +25,8 @@ Verificamos as variáveis disponíveis em cada Censo e vamos uniformizar as base
 
 */
 	
-*1*
-* CONVERTING FROM .CSV TO .DTA
-*--------------------------------------------------------------------------------------------------------------------------------*
-
-*2014-2017*
-forvalues year = 2014/2017 {
-	import	delimited "$input_census/`year'/DADOS/ESCOLAS.CSV", delimiter("|") clear
-	rename 	*, upper
-	save 	"$output_census/Escolas`year'", replace
-}	
-
 	
-*2*
+*1*
 *RENAMING
 *--------------------------------------------------------------------------------------------------------------------------------*
 
@@ -175,7 +164,7 @@ destring, replace
 save "$output_census/Escolas2016.dta", replace
 
 
-*3*	
+*2*	
 *CLEANING
 *--------------------------------------------------------------------------------------------------------------------------------*
 
@@ -255,7 +244,7 @@ forvalues year = 2007/2016 {
 				save "$output_census/Escolas`year'.dta", replace
 }
 
-*4*
+*3*
 *APPEND	
 *--------------------------------------------------------------------------------------------------------------------------------*
 clear

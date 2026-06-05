@@ -1,20 +1,6 @@
-
+											
 *1*
-* CONVERTING FROM .CSV TO .DTA
-*--------------------------------------------------------------------------------------------------------------------------------*
-
-*2014-2017*
-	forvalues year = 2014/2017 {
-		foreach region in CO NORDESTE SUDESTE SUL NORTE {
-			import delimited "$input_census/`year'/DADOS/DOCENTES_`region'.CSV" , delimiter("|") clear
-			rename *, upper
-			save "$output_census/Professores`year'`region'", replace
-		}	
-	}
-
-													
-*2*
-*PROGRAMA PARA PADRONIZAÇÃO DOS DADOS
+* Creating program for data standarization 
 *--------------------------------------------------------------------------------------------------------------------------------*
 cap program drop Professores
 program define Professores
@@ -155,8 +141,8 @@ end
 
 
 
-*3*																
-*APLICANDO O PROGRAMA
+*2*																
+* Applying function
 *--------------------------------------------------------------------------------------------------------------------------------*
 	foreach year in 2007 2009 2010 2011 2012 2013  {
 		foreach region in RO AC AM RR PA AP TO MA PI CE RN PB PE AL SE BA MG ES RJ SP PR SC RS MS MT GO DF{
@@ -175,7 +161,7 @@ end
 
 
 
-*4*																
+*3*																
 *CLEANING
 *--------------------------------------------------------------------------------------------------------------------------------*
 	clear

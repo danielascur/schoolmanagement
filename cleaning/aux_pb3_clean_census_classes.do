@@ -1,23 +1,12 @@
 
 
-*OBS: COM ESSA BASE, É POSSÍVEL SABER A QUANTIDADE DE ALUNOS QUE ESTÃO MATRICULADOS EM TURMAS MULTIETAPA. 
 
-*1*
-* CONVERTING FROM .CSV TO .DTA
-*--------------------------------------------------------------------------------------------------------------------------------*
-
-*2014-2017*
-	forvalues year = 2014/2017 {
-		import 	delimited "$input_census/`year'/DADOS/TURMAS.CSV", delimiter("|") clear
-		rename 	*, upper 
-		save 	"$output_census/Turmas`year'", replace
-	}
 		
-			
-*2*														
-*ORGANIZAÇÃO DOS MICRODADOS DAS TURMAS - 2007-2017
+*1*														
+* Organizing Cohorts (Turmas) microdata - 2007-2017
 *----------------------------------------------------------------------------------------------------------------------------*
 
+*Obs: With this dataset, we can know which students are enrolled in multietapa" cohorts
 
 
 *2007-2017
@@ -147,7 +136,7 @@ forvalues k = 2007/2017 {
 }
 
 
-*3*																
+*2*																
 *CLEANING
 *--------------------------------------------------------------------------------------------------------------------------------*
 
@@ -229,14 +218,14 @@ compress
 save "$output_census/Turmas.dta", replace
 
 
-* Tamanho médio das turmas
+* Average cohort size
 *------------------------------------------------------------------------------------------------------------------------*
 foreach x in $turmas {
 	gen	 	classhour`x' = last/60 			if tclass`x' == 1 	//duração da aula, em horas
 	replace tclass`x' 	 = enrollments 		if tclass`x' == 1 	//número de alunos na turma
 }
 
-*Por escola
+* By School
 *------------------------------------------------------------------------------------------------------------------------*
 
 preserve

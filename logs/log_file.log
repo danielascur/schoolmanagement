@@ -56048,3 +56048,5543 @@ command(s) run for each plausible value and replicate weight:
 
      reg @pv [aw=@w] if uschool_id=="ARE78400662"
 
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 40
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  521.30578  23.115469  22.552248  7.2549035  5.514e-08
+(40 real changes made)
+ARE78400663, test result = 36
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400663"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 36
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  510.71206   12.94197  39.461693  65.093162  3.528e-47
+(36 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400663"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 36
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  530.02319  28.081864  18.874217   6.179346  1.068e-06
+(36 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400663"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 36
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  521.52237   11.01421  47.349956  68.678383  3.589e-54
+(36 real changes made)
+ARE78400664, test result = 38
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400664"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 38
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  520.06666  17.233212  30.178162  75.408302  7.609e-44
+(38 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400664"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 38
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  557.81485  18.205475  30.639951  46.579036  1.612e-32
+(38 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400664"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 38
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  555.86104   18.65794  29.792198  66.855517  2.553e-40
+(38 real changes made)
+ARE78400665, test result = 9
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400665"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 9
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  390.17558  24.059476  16.217127  78.008264  1.053e-26
+(9 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400665"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 9
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  368.21812  26.846125  13.715876   30.06135  1.781e-14
+(9 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400665"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 9
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  381.86919  28.220418  13.531663  25.554431  3.695e-13
+(9 real changes made)
+ARE78400666, test result = 37
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400666"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 37
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  481.09022  15.255334   31.53587   47.00055  2.832e-33
+(37 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400666"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 37
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  507.52446   17.17517  29.549895  50.815958  1.129e-33
+(37 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400666"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 37
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  500.05309  20.817494  24.020811  18.703594  1.621e-15
+(37 real changes made)
+ARE78400667, test result = 42
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400667"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 42
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  429.49492  8.4428761  50.870688  81.983076  8.713e-64
+(42 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400667"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 42
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons   368.9197  15.179365  24.304026  13.312241  2.033e-12
+(42 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400667"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 42
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  440.09518  12.353603  35.624843  22.628747  2.236e-21
+(42 real changes made)
+ARE78400668, test result = 40
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400668"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 40
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  345.46228  13.460245  25.665377  11.021985  3.503e-11
+(40 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400668"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 40
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons   275.3345  20.002519  13.764991  11.169386  2.362e-08
+(40 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400668"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 40
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  285.88569  21.859054  13.078594  6.7321902  4.927e-06
+(40 real changes made)
+ARE78400669, test result = 40
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400669"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 40
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  351.17488  9.9485359  35.299152  26.498265  8.179e-24
+(40 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400669"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 40
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  328.89427  15.432711  21.311504  12.783931  2.276e-11
+(40 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400669"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 40
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  344.83042     11.498  29.990469  48.666358  4.858e-33
+(40 real changes made)
+ARE78400670, test result = 7
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400670"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 7
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  491.69616  19.590928  25.098156  65.843596  2.004e-35
+(7 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400670"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 7
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  430.60885  30.219866  14.249198  6.2673768  5.204e-06
+(7 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400670"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 7
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  485.68673  23.249644  20.890072  54.135311  1.409e-27
+(7 real changes made)
+ARE78400671, test result = 9
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400671"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 9
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  442.74268  22.579606  19.608079  24.759923  1.354e-16
+(9 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400671"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 9
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  371.90225  28.913866  12.862419  32.783574  2.330e-14
+(9 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400671"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 9
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  405.89606   25.65438  15.821706  27.241414  2.948e-15
+(9 real changes made)
+ARE78400672, test result = 37
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400672"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 37
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  345.11869  14.162587  24.368337  57.685275  4.699e-32
+(37 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400672"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 37
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  287.81683  15.760201  18.262256  33.850288  4.239e-19
+(37 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400672"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 37
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  344.46582  18.076935  19.055543  15.586721  3.226e-12
+(37 real changes made)
+ARE78400673, test result = 42
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400673"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 42
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  406.60854  11.961216  33.993914  41.139741  9.786e-32
+(42 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400673"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 42
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  416.78146   14.39755  28.948081  17.459244  3.343e-16
+(42 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400673"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 42
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  422.36938  19.153826  22.051436   9.410831  2.025e-09
+(42 real changes made)
+ARE78400674, test result = 95
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400674"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 95
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  364.41535  8.8756559   41.05785  19.189344  3.634e-20
+(95 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400674"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 95
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  324.61055  12.120845   26.78118  10.572657  4.644e-11
+(95 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400674"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 95
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  360.96776  7.4203169  48.645868  50.491607  4.351e-44
+(95 real changes made)
+ARE78400675, test result = 41
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400675"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 41
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  384.08755   16.51374  23.258665  12.860034  6.852e-12
+(41 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400675"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 41
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  288.32765  19.943008  14.457581  12.161787  5.019e-09
+(41 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400675"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 41
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  349.23722  14.432688  24.197656  24.070752  2.101e-18
+(41 real changes made)
+ARE78400676, test result = 3
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400676"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 3
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  484.41909  54.810503  8.8380704  76.501776  2.589e-13
+(3 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400676"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 3
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  471.83658  61.386387   7.686339  83.491323  2.648e-11
+(3 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400676"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 3
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  483.61003  58.316138  8.2929021  69.028194  5.806e-12
+(3 real changes made)
+ARE78400677, test result = 38
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400677"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 38
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  470.58376  14.135327  33.291324   21.28746  7.555e-20
+(38 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400677"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 38
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  507.89463  19.504963  26.039252  8.3348934  2.800e-09
+(38 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400677"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 38
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  512.14594  27.566494  18.578566  5.4276047  4.024e-06
+(38 real changes made)
+ARE78400678, test result = 39
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400678"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 39
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  408.28857  11.988508  34.056663  17.942552  9.321e-18
+(39 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400678"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 39
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  389.34343  15.321087  25.412259  42.682009  2.115e-27
+(39 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400678"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 39
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  423.37341  14.116772  29.990809  25.322907  2.616e-21
+(39 real changes made)
+ARE78400679, test result = 18
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400679"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 18
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  374.59168  9.1786343  40.811265          4  2.154e-06
+(18 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400679"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 18
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  340.60796  4.0030457  85.087202          4  1.144e-07
+(18 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400679"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 18
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  374.91571  8.7131715  43.028616          4  1.744e-06
+(18 real changes made)
+ARE78400680, test result = 42
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400680"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 42
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  314.70906  10.179135  30.917074  28.626964  1.527e-23
+(42 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400680"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 42
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  247.10525  19.488093  12.679807  7.0035143  4.371e-06
+(42 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400680"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 42
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  333.05973  14.396759  23.134355  12.097994  2.196e-11
+(42 real changes made)
+ARE78400681, test result = 35
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400681"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 35
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  454.04712  17.892831  25.375924  28.046914  6.883e-21
+(35 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400681"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 35
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  472.75508  21.747153  21.738711  41.005407  4.008e-24
+(35 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400681"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 35
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  461.59668  33.343391  13.843723  6.9752528  2.500e-06
+(35 real changes made)
+ARE78400682, test result = 17
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400682"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 17
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  392.80362  18.308166  21.455104   60.08949  7.380e-30
+(17 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400682"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 17
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons   350.9597  22.602712  15.527327  22.802081  1.293e-13
+(17 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400682"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 17
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  395.46632  19.817069  19.955843  68.508478  2.956e-30
+(17 real changes made)
+ARE78400683, test result = 22
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400683"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 22
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  425.39267  19.457538  21.862616  83.233105  3.031e-36
+(22 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400683"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 22
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  374.80931  23.338922  16.059409  52.759913  5.825e-22
+(22 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400683"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 22
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  433.03923  20.261962  21.372028  43.949182  7.548e-25
+(22 real changes made)
+ARE78400684, test result = 24
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400684"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 24
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  419.74735  16.675277  25.171836  57.119127  1.328e-32
+(24 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400684"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 24
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  413.39478  20.308359  20.355893  57.568586  5.587e-28
+(24 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400684"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 24
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  422.94942  18.022235    23.4682  59.214345  1.114e-31
+(24 real changes made)
+ARE78400685, test result = 10
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400685"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 10
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  435.80455   21.62772  20.150277  83.761855  7.202e-34
+(10 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400685"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 10
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  379.77151  33.228335  11.429147   15.13959  7.594e-09
+(10 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400685"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 10
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  428.24782  33.208582  12.895697  26.710982  5.541e-13
+(10 real changes made)
+ARE78400686, test result = 41
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400686"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 41
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons   409.4083  12.258836  33.396997          4  4.794e-06
+(41 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400686"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 41
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  394.81788  9.3543509   42.20687          4  1.884e-06
+(41 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400686"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 41
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  409.06496  7.7532618   52.76037          4  7.725e-07
+(41 real changes made)
+ARE78400687, test result = 37
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400687"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 37
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  372.62294  11.693279   31.86642  52.724602  4.013e-36
+(37 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400687"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 37
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  362.54606  18.455837  19.643978  22.833259  8.432e-16
+(37 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400687"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 37
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  360.97546  14.265098    25.3048  22.870432  3.177e-18
+(37 real changes made)
+ARE78400688, test result = 27
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400688"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 27
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  555.44692  16.911493  32.844346  56.949433  1.053e-38
+(27 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400688"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 27
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  546.64894  19.882794  27.493568  67.888142  1.609e-38
+(27 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400688"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 27
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  562.90069  21.884027  25.721989  46.745964  3.068e-29
+(27 real changes made)
+ARE78400689, test result = 18
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400689"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 18
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  430.42772  17.304865   24.87322  39.006574  1.542e-25
+(18 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400689"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 18
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  401.75485  23.457373  17.127018  55.301853  8.997e-24
+(18 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400689"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 18
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  418.01157  24.075349  17.362638  46.878585  4.763e-22
+(18 real changes made)
+ARE78400690, test result = 34
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400690"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 34
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  338.88882  17.619134  19.234135  15.322015  3.811e-12
+(34 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400690"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 34
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  281.82071  17.648695   15.96836   22.46887  9.428e-14
+(34 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400690"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 34
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  325.59171   19.07883  17.065602  14.996266  3.114e-11
+(34 real changes made)
+ARE78400691, test result = 16
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400691"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 16
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons   462.1269  21.918929  21.083462  81.724669  8.502e-35
+(16 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400691"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 16
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  445.07833  24.907457   17.86928  66.137452  5.187e-27
+(16 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400691"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 16
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  446.34869  25.907715  17.228408  83.721887  2.922e-29
+(16 real changes made)
+ARE78400692, test result = 23
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400692"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 23
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  498.65466  22.809234  21.861964  56.463158  3.093e-29
+(23 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400692"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 23
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  493.44023  27.965591  17.644548  68.733821  3.162e-27
+(23 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400692"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 23
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  501.11229  22.507394   22.26434  81.576451  2.063e-36
+(23 real changes made)
+ARE78400693, test result = 25
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400693"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 25
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  380.83233  21.099112  18.049685  83.631021  1.391e-30
+(25 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400693"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 25
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  335.36627  28.099961  11.934759  57.653111  3.255e-17
+(25 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400693"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 25
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons    391.449  26.122023  14.985401  20.351614  1.842e-12
+(25 real changes made)
+ARE78400694, test result = 40
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400694"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 40
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  355.37914  12.583724  28.241175  23.993492  6.364e-20
+(40 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400694"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 40
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  322.82187  22.105051  14.603987  14.427059  4.831e-10
+(40 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400694"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 40
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  334.11926  23.368343  14.297944  6.8599774  2.332e-06
+(40 real changes made)
+ARE78400695, test result = 37
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400695"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 37
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  393.95424  14.479676  27.207394  80.310146  2.754e-42
+(37 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400695"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 37
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  353.72117  19.601639   18.04549  24.939677  7.941e-16
+(37 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400695"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 37
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  411.07724  19.514643  21.065066  25.571108  1.117e-17
+(37 real changes made)
+ARE78400696, test result = 37
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400696"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 37
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  498.21665  15.689343    31.7551  72.225549  3.581e-44
+(37 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400696"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 37
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  500.55807  22.258186  22.488718   26.66936  7.195e-19
+(37 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400696"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 37
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  543.93815  21.281613  25.559066  11.043622  3.539e-11
+(37 real changes made)
+ARE78400697, test result = 18
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400697"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 18
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  387.42352  13.880247  27.911861  22.478681  6.048e-19
+(18 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400697"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 18
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons   403.2786  20.389366  19.778869  18.212457  9.224e-14
+(18 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400697"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 18
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  394.57481  19.657007  20.072985  15.273591  2.151e-12
+(18 real changes made)
+ARE78400698, test result = 42
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400698"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 42
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  377.85299  11.945981  31.630134  41.756315  8.427e-31
+(42 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400698"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 42
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  383.09865  15.213988  25.180686  30.789209  4.192e-22
+(42 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400698"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 42
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  382.88578  16.066663  23.831071  11.872896  2.160e-11
+(42 real changes made)
+ARE78400699, test result = 33
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400699"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 33
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons   372.8596  9.7333712  38.307344   61.26583  1.651e-44
+(33 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400699"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 33
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  329.07676  15.507985  21.219827  60.599657  9.601e-30
+(33 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400699"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 33
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  369.38409  11.991844  30.802943  73.464025  9.555e-44
+(33 real changes made)
+ARE78400700, test result = 20
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400700"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 20
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  400.06573  19.720664  20.286626  76.449234  1.669e-32
+(20 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400700"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 20
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  350.73517  19.309776  18.163607   50.03613  1.128e-23
+(20 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400700"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 20
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  395.38436  17.679718  22.363726  21.009392  3.930e-16
+(20 real changes made)
+ARE78400701, test result = 38
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400701"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 38
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons   348.1083  10.691449  32.559505  75.752459  2.726e-46
+(38 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400701"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 38
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  263.33606  13.805657  19.074504  13.928009  2.226e-11
+(38 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400701"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 38
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  323.36932  14.964528  21.609056  19.621488  3.783e-15
+(38 real changes made)
+ARE78400702, test result = 9
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400702"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 9
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  624.94878  19.691096  31.737633  43.319487  1.249e-31
+(9 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400702"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 9
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  609.01369  31.665014  19.233015  65.959765  9.531e-29
+(9 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400702"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 9
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  613.76984  28.978277  21.180343  8.8879753  6.495e-09
+(9 real changes made)
+ARE78400703, test result = 14
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400703"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 14
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  426.06918  29.886265  14.256354  76.774225  2.838e-23
+(14 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400703"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 14
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  384.56462  30.753183  12.504872  76.151866  3.841e-20
+(14 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400703"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 14
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  426.50849  26.698992  15.974704  63.431714  6.513e-24
+(14 real changes made)
+ARE78400704, test result = 39
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400704"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 39
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  354.61355  13.544533  26.181305  11.781523  8.333e-12
+(39 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400704"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 39
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  324.41134  13.081448  24.799345  83.914375  2.190e-40
+(39 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400704"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 39
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  362.10497  25.664897  14.108959  5.3148665  .00002047
+(39 real changes made)
+ARE78400705, test result = 40
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400705"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 40
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  399.95256  12.181078  32.833922  53.824166  2.784e-37
+(40 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400705"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 40
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  385.92324  17.331267  22.267457  34.171761  6.351e-22
+(40 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400705"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 40
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  373.56199  16.592564   22.51382  22.016671  1.086e-16
+(40 real changes made)
+ARE78400706, test result = 16
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400706"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 16
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  347.89488  17.331334  20.073173  53.257947  1.676e-26
+(16 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400706"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 16
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  339.21116  22.681627  14.955327  37.471213  2.222e-17
+(16 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400706"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 16
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  366.57575  16.720919  21.923181  24.963227  7.978e-18
+(16 real changes made)
+ARE78400707, test result = 42
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400707"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 42
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  423.23562  11.060081  38.266954  66.549518  4.835e-47
+(42 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400707"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 42
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  422.12202  15.346046  27.506891  28.897724  2.827e-22
+(42 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400707"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 42
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  422.90345  14.627139  28.912247  18.980042  3.704e-17
+(42 real changes made)
+ARE78400708, test result = 42
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400708"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 42
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  468.39398  9.6516485  48.529946  32.589617  5.709e-32
+(42 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400708"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 42
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  476.36107   18.32472  25.995544  11.561302  1.284e-11
+(42 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400708"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 42
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  466.39773  13.902312  33.548214  25.966078  6.519e-23
+(42 real changes made)
+ARE78400709, test result = 41
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400709"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 41
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons   383.2914  10.630144  36.057029  71.748414  1.026e-47
+(41 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400709"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 41
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  361.19687  17.889728  20.190182  19.641376  1.329e-14
+(41 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400709"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 41
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  374.21861  14.316426  26.139108  21.123062  1.428e-17
+(41 real changes made)
+ARE78400710, test result = 25
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400710"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 25
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  347.00849  12.485729  27.792408  19.018908  7.302e-17
+(25 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400710"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 25
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons   329.2095  17.811344  18.483136   27.58483  4.516e-17
+(25 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400710"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 25
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  348.31401   14.15318    24.6103  64.013851  2.422e-34
+(25 real changes made)
+ARE78400711, test result = 42
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400711"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 42
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  346.44029  12.486005  27.746289  14.333461  7.302e-14
+(42 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400711"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 42
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  312.77537  13.087586   23.89863  17.910083  4.898e-15
+(42 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400711"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 42
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  328.31627  16.306347  20.134262  12.918201  3.879e-11
+(42 real changes made)
+ARE78400712, test result = 17
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400712"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 17
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  478.72603  16.899609  28.327639  83.428104  1.444e-44
+(17 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400712"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 17
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  496.10333  28.101451  17.654011  44.498792  1.012e-21
+(17 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400712"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 17
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  485.46389  19.596119  24.773471  44.521975  1.118e-27
+(17 real changes made)
+ARE78400713, test result = 40
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400713"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 40
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  549.24751  15.381819  35.707578  41.377457  1.024e-32
+(40 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400713"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 40
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  527.53065  22.100582  23.869536  25.547974  5.444e-19
+(40 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400713"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 40
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  533.32192  20.694527  25.771158  17.797177  1.534e-15
+(40 real changes made)
+ARE78400714, test result = 38
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400714"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 38
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  483.05265  16.709274  28.909255  14.082923  6.092e-14
+(38 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400714"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 38
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  477.69236  20.860925  22.898906  9.9844903  5.831e-10
+(38 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400714"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 38
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  501.73185  26.698594  18.792444  6.7625823  4.342e-07
+(38 real changes made)
+ARE78400715, test result = 2
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400715"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 2
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons   427.6477  40.256833  10.622984  7.7610475  6.776e-06
+(2 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400715"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 2
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons   338.8754  61.906002  5.4740314  42.239998  2.223e-06
+(2 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400715"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 2
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons   436.1903  55.490506  7.8606293  49.374359  2.970e-10
+(2 real changes made)
+ARE78400716, test result = 40
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400716"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 40
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  361.03189  13.067472  27.628287  12.254503  2.064e-12
+(40 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400716"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 40
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  341.05042  17.022351  20.035447  13.690585  1.546e-11
+(40 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400716"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 40
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons   368.9428  11.852541  31.127739  65.049155  8.639e-41
+(40 real changes made)
+ARE78400717, test result = 38
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400717"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 38
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  643.39144  12.411063  51.840158  27.776812  3.457e-29
+(38 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400717"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 38
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  670.27968  17.365683  38.597945   12.14592  4.429e-14
+(38 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400717"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 38
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  640.33725  14.567894  43.955375   9.414336  3.239e-12
+(38 real changes made)
+ARE78400718, test result = 34
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400718"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 34
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  547.83256  19.827484  27.629958   78.28152  3.989e-42
+(34 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400718"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 34
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  532.46773  32.042414  16.617591  12.775898  4.977e-10
+(34 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400718"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 34
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  532.00402  21.823809   24.37723  47.432187  1.774e-28
+(34 real changes made)
+ARE78400719, test result = 22
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400719"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 22
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  479.15294   15.11606   31.69827  82.320833  6.739e-48
+(22 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400719"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 22
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  488.18816  21.546897  22.657005  26.035616  1.160e-18
+(22 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400719"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 22
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  482.73601  18.810724  25.662808  44.808172  1.976e-28
+(22 real changes made)
+ARE78400720, test result = 37
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400720"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 37
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  492.23791  20.871615  23.584083  43.201505  2.656e-26
+(37 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400720"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 37
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  518.75646  28.961316  17.912047  11.540769  8.844e-10
+(37 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400720"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 37
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  490.65762  23.567184  20.819527  11.401687  1.983e-10
+(37 real changes made)
+ARE78400721, test result = 24
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400721"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 24
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  550.52368  21.708814  25.359454  66.745613  5.541e-36
+(24 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400721"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 24
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons   545.6722  25.873021  21.090393  48.308097  5.123e-26
+(24 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400721"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 24
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  556.70543   21.85272  25.475338   68.78468  9.426e-37
+(24 real changes made)
+ARE78400722, test result = 13
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400722"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 13
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  381.26159  18.395974  20.725273  54.895564  1.253e-27
+(13 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400722"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 13
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  317.79248  16.866237  18.841931  50.526102  1.678e-24
+(13 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400722"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 13
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  357.81998  20.027939  17.866041  58.916787  1.846e-25
+(13 real changes made)
+ARE78400723, test result = 10
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400723"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 10
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  474.51732  25.263292  18.782878  65.020787  5.795e-28
+(10 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400723"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 10
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  455.01566  37.036277  12.285675  58.974783  6.685e-18
+(10 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400723"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 10
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  476.36561  34.129992   13.95739  27.743724  4.565e-14
+(10 real changes made)
+ARE78400724, test result = 31
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400724"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 31
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  534.06901  16.519063  32.330466    51.2007  9.735e-36
+(31 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400724"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 31
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  565.35629  29.509993   19.15813  7.3251049  1.588e-07
+(31 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400724"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 31
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  533.84359  27.450721  19.447343  8.5334576  2.294e-08
+(31 real changes made)
+ARE78400725, test result = 12
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400725"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 12
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  390.54202  28.088707   13.90388  83.592874  1.880e-23
+(12 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400725"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 12
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  348.61656  33.628172  10.366801  76.547403  3.104e-16
+(12 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400725"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 12
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  386.06393  35.185465  10.972256  36.698094  3.834e-13
+(12 real changes made)
+ARE78400726, test result = 2
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400726"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 2
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons   498.7935  21.388782  23.320332  25.268323  1.307e-18
+(2 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400726"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 2
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons   495.7377  75.850668  6.5357064  75.427804  6.663e-09
+(2 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400726"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 2
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons   484.6421  41.809701  11.591619    18.6222  5.892e-10
+(2 real changes made)
+ARE78400727, test result = 38
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400727"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 38
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  423.17962  11.123834  38.042606  81.301429  1.448e-53
+(38 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400727"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 38
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  419.33703  17.002747  24.662898  40.252698  6.533e-26
+(38 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400727"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 38
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  437.21805  19.534058  22.382346  17.016403  4.625e-14
+(38 real changes made)
+ARE78400728, test result = 13
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400728"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 13
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  426.96344  27.686841  15.421168  78.454437  1.836e-25
+(13 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400728"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 13
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  389.99434  25.885636  15.066052  40.785581  2.897e-18
+(13 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400728"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 13
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  395.26358  26.315353  15.020265  82.803558  2.311e-25
+(13 real changes made)
+ARE78400729, test result = 39
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400729"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 39
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  427.89126  15.845853  27.003359  22.040604  2.199e-18
+(39 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400729"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 39
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  450.18142  16.062308  28.027194  59.051169  8.233e-36
+(39 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400729"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 39
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  461.79858  24.158498  19.115368  8.9599235  1.432e-08
+(39 real changes made)
+ARE78400730, test result = 39
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400730"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 39
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  386.74977  13.581273  28.476694  42.633711  2.247e-29
+(39 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400730"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 39
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons   408.8619  19.323408  21.158892  42.805199  2.717e-24
+(39 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400730"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 39
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  378.45332  18.301365  20.678967  18.512344  3.010e-14
+(39 real changes made)
+ARE78400731, test result = 38
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400731"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 38
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons   407.5817  12.400324  32.868632   71.30831  8.140e-45
+(38 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400731"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 38
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  351.94457  17.884147  19.679137  13.107936  4.064e-11
+(38 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400731"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 38
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons   403.3722  19.319795    20.8787  9.0991761  5.349e-09
+(38 real changes made)
+ARE78400732, test result = 39
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400732"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 39
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  427.80904  11.915839  35.902553  29.506128  6.651e-26
+(39 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400732"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 39
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  430.17521   12.94005  33.243706  31.963074  2.303e-26
+(39 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400732"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 39
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  415.80307   16.32886  25.464305  12.578258  3.358e-12
+(39 real changes made)
+ARE78400733, test result = 32
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400733"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 32
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  409.69312  3.6414327  112.50877          4  3.743e-08
+(32 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400733"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 32
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  430.41883  10.859403  39.635588          4  2.421e-06
+(32 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400733"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 32
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  392.20697  13.194718  29.724542          4  7.628e-06
+(32 real changes made)
+ARE78400734, test result = 19
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400734"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 19
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons    441.189  17.375854  25.390925  52.394917  4.079e-31
+(19 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400734"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 19
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  388.66351  20.351019  19.097988  79.292227  2.139e-31
+(19 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400734"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 19
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons   412.4421  18.641854  22.124521  22.443469  9.771e-17
+(19 real changes made)
+ARE78400735, test result = 34
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400735"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 34
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  486.02905  17.679867  27.490537  81.555459  5.286e-43
+(34 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400735"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 34
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  468.24043  17.823995  26.270229  55.018835  8.176e-33
+(34 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400735"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 34
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  527.34589  21.800644  24.189463  40.491526  1.092e-25
+(34 real changes made)
+ARE78400736, test result = 38
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400736"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 38
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  515.82661  11.434509   45.11139  71.012098  5.155e-54
+(38 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400736"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 38
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  555.59558  24.205939  22.952862  9.6622893  9.410e-10
+(38 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400736"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 38
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  526.50182  15.288654  34.437421  25.360252  8.104e-23
+(38 real changes made)
+ARE78400737, test result = 27
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400737"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 27
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  367.62511  15.887313   23.13954  24.376744  4.204e-18
+(27 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400737"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 27
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  353.67718  19.797143  17.865062  14.369528  3.250e-11
+(27 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400737"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 27
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  357.92808  19.446937   18.40537   9.208377  1.414e-08
+(27 real changes made)
+ARE78400738, test result = 37
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400738"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 37
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  389.93377  15.559903  25.060167  14.767668  1.637e-13
+(37 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400738"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 37
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  390.05833  19.665043  19.835112  15.027406  3.442e-12
+(37 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400738"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 37
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  374.22569  18.381532  20.358787  12.966844  3.168e-11
+(37 real changes made)
+ARE78400739, test result = 29
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400739"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 29
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  525.50281  22.041044  23.842011  83.909405  3.982e-39
+(29 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400739"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 29
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  502.69621  25.067844  20.053428  83.059747  1.402e-33
+(29 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400739"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 29
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  525.84251  21.113949  24.904981  80.634152  1.289e-39
+(29 real changes made)
+ARE78400740, test result = 9
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400740"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 9
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  478.98321  33.175705   14.43777  83.145063  2.275e-24
+(9 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400740"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 9
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  457.96335  32.669186  14.018205  76.803228  7.199e-23
+(9 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400740"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 9
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  472.63289  30.530433  15.480714  83.585394  2.845e-26
+(9 real changes made)
+ARE78400741, test result = 25
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400741"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 25
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons   566.7336  15.932037  35.571949  74.666583  1.447e-48
+(25 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400741"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 25
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  549.32961  16.963058  32.383879   42.20097  1.955e-31
+(25 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400741"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 25
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  556.95057  16.085251  34.624922  25.861755  3.400e-23
+(25 real changes made)
+ARE78400742, test result = 10
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400742"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 10
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  399.52944  17.075792  23.397418  56.759341  7.829e-31
+(10 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400742"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 10
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  361.70667  45.785923  7.8999536  30.755688  6.813e-09
+(10 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400742"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 10
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons   440.6143  35.390592   12.45004  11.658459  4.353e-08
+(10 real changes made)
+ARE78400743, test result = 18
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400743"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 18
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  507.90202  20.051901  25.329369  75.237383  1.439e-38
+(18 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400743"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 18
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  497.13292  22.456981  22.137121  47.937319  8.115e-27
+(18 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400743"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 18
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  503.13321  19.473737    25.8365    51.0231  5.708e-31
+(18 real changes made)
+ARE78400744, test result = 13
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400744"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 13
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  451.73063  17.774787  25.414124  37.239406  3.974e-25
+(13 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400744"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 13
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  431.57902  16.031311  26.921007  68.735332  3.092e-38
+(13 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400744"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 13
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  435.64942  19.626859  22.196594  11.905784  4.709e-11
+(13 real changes made)
+ARE78400745, test result = 40
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400745"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 40
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons   356.6294  11.195172  31.855644  69.988995  2.176e-43
+(40 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400745"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 40
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  329.98577  14.177116  23.275945  27.985876  7.439e-20
+(40 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400745"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 40
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  350.36922  17.006814  20.601696  14.537205  3.652e-12
+(40 real changes made)
+ARE78400746, test result = 25
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400746"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 25
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  416.97283  19.589839  21.285158  53.860343  6.866e-28
+(25 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400746"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 25
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  399.84097  22.518369  17.756214  51.424611  1.378e-23
+(25 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400746"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 25
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  423.43372  18.938678  22.358145  79.862709  4.018e-36
+(25 real changes made)
+ARE78400747, test result = 26
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400747"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 26
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  524.36001  20.309769  25.818118  70.095276  1.565e-37
+(26 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400747"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 26
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  514.91857  23.255317  22.141971  19.031008  4.792e-15
+(26 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400747"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 26
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  523.81952  21.634301  24.212454  65.735465  1.833e-34
+(26 real changes made)
+ARE78400748, test result = 38
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400748"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 38
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons   378.2642  14.674137  25.777611  12.459507  3.467e-12
+(38 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400748"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 38
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  391.15554  18.304976  21.368809  23.098683  1.024e-16
+(38 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400748"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 38
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  354.45108  19.057742  18.598797  10.279575  2.999e-09
+(38 real changes made)
+ARE78400749, test result = 35
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400749"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 35
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  413.67148  13.863545  29.838796  22.338738  1.701e-19
+(35 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400749"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 35
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  380.34745  23.309126  16.317534  9.8197146  1.938e-08
+(35 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400749"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 35
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  366.41768  17.576601  20.846902  11.370472  2.040e-10
+(35 real changes made)
+ARE78400750, test result = 19
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400750"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 19
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons   365.5268  13.320289  27.441356  50.395667  5.760e-32
+(19 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400750"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 19
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  368.43672  24.978193  14.750335  16.148747  8.593e-11
+(19 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400750"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 19
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons   371.9463  28.935626  12.854268  9.2633504  3.244e-07
+(19 real changes made)
+ARE78400751, test result = 56
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400751"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 56
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  410.04997   15.51416  26.430692  11.143656  2.088e-11
+(56 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400751"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 56
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  382.57085  22.462185  17.031774  9.2084834  2.834e-08
+(56 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400751"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 56
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  376.59983  19.221636  19.592496  10.431756  1.443e-09
+(56 real changes made)
+ARE78400752, test result = 40
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400752"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 40
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  389.98882  15.653337  24.914101  66.137331  2.511e-35
+(40 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400752"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 40
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons   303.4112  20.529156  14.779526  31.627543  9.452e-16
+(40 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400752"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 40
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  359.25255  24.315485   14.77464  10.740502  1.773e-08
+(40 real changes made)
+ARE78400753, test result = 21
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400753"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 21
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  407.04039  16.790338  24.242536   71.37306  3.516e-36
+(21 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400753"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 21
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  380.02543  15.433346  24.623658  83.882793  3.776e-40
+(21 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400753"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 21
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  398.65685  16.721868  23.840449   75.20267  8.522e-37
+(21 real changes made)
+ARE78400754, test result = 35
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400754"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 35
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  434.71915  20.632623  21.069505   17.79637  4.965e-14
+(35 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400754"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 35
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  414.69749  22.358724  18.547457   34.38533  1.749e-19
+(35 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400754"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 35
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  416.28607  21.391811  19.460067  15.308948  3.258e-12
+(35 real changes made)
+ARE78400755, test result = 42
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400755"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 42
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  359.64663  13.866464  25.936434  83.647158  9.325e-42
+(42 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400755"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 42
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons   312.1717  20.270736  15.400117   13.05771  9.393e-10
+(42 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400755"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 42
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  353.36949  20.569713  17.179116  14.985386  2.865e-11
+(42 real changes made)
+ARE78400756, test result = 41
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400756"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 41
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  400.73776  16.693784  24.005208   11.32685  4.533e-11
+(41 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400756"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 41
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  349.90839  15.255606  22.936381   41.03722  5.092e-25
+(41 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400756"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 41
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  343.67218  30.248715  11.361546  5.4990964  .00005017
+(41 real changes made)
+ARE78400757, test result = 18
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400757"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 18
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  375.19476  18.032534  20.806546   72.05898  3.454e-32
+(18 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400757"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 18
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  385.31292  21.900143  17.594082   74.97783  2.465e-28
+(18 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400757"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 18
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  389.90544  20.969784  18.593679   73.64796  1.546e-29
+(18 real changes made)
+ARE78400758, test result = 27
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400758"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 27
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  538.15452  15.426599  34.884846   83.36598  1.674e-51
+(27 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400758"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 27
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  549.05079  17.967945  30.557239  42.126835  2.229e-30
+(27 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400758"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 27
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  547.29484  16.769083  32.637136   67.33344  5.370e-43
+(27 real changes made)
+ARE78400759, test result = 47
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400759"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 47
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  396.49618  9.5363463  41.577368  83.999777  8.297e-58
+(47 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400759"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 47
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  411.84209  16.357824  25.177071  29.202407  2.362e-21
+(47 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400759"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 47
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  386.56383  13.031484  29.663839  18.488444  4.737e-17
+(47 real changes made)
+ARE78400760, test result = 24
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400760"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 24
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  301.41652  10.254497  29.393592  39.394735  2.059e-28
+(24 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400760"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 24
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  268.55095  15.533318  17.288705  65.916731  3.484e-26
+(24 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400760"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 24
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  298.50153  14.268441  20.920403  31.248044  6.124e-20
+(24 real changes made)
+ARE78400761, test result = 39
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400761"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 39
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  360.05724  12.842715  28.035912  17.539367  5.148e-16
+(39 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400761"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 39
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  320.09819   13.21769  24.217407  31.292672  7.821e-22
+(39 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400761"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 39
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  361.36586  14.718813  24.551291  16.021142  3.858e-14
+(39 real changes made)
+ARE78400762, test result = 35
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400762"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 35
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  520.60165  14.861023  35.031346  33.286544  7.507e-28
+(35 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400762"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
+Estimates for PV4READ   complete
+Estimates for PV5READ   complete
+
+Number of observations: 35
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  470.30962   25.64579  18.338667  10.315512  3.293e-09
+(35 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400762"
+
+Estimates for PV1SCIE   complete
+Estimates for PV2SCIE   complete
+Estimates for PV3SCIE   complete
+Estimates for PV4SCIE   complete
+Estimates for PV5SCIE   complete
+
+Number of observations: 35
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  505.46318  19.628311  25.751741  11.109027  2.937e-11
+(35 real changes made)
+ARE78400763, test result = 15
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400763"
+
+Estimates for PV1MATH   complete
+Estimates for PV2MATH   complete
+Estimates for PV3MATH   complete
+Estimates for PV4MATH   complete
+Estimates for PV5MATH   complete
+
+Number of observations: 15
+Average R-Squared: 0
+
+
+            Coef    Std Err          t    t Param      P>|t|
+_cons  308.39349  18.648013  16.537606  13.011148  4.068e-10
+(15 real changes made)
+
+command(s) run for each plausible value and replicate weight:
+
+     reg @pv [aw=@w] if uschool_id=="ARE78400763"
+
+Estimates for PV1READ   complete
+Estimates for PV2READ   complete
+Estimates for PV3READ   complete
