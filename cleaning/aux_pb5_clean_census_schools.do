@@ -1,0 +1,311 @@
+
+														
+*EXPLICAÇÃO DAS BASES DE DADOS CONSTRUÍDAS
+*----------------------------------------------------------------------------------------------------------------------------*
+/*
+
+Esta base constroi:
+
+	(1) Um painel de escolas com variáveis de INFRAESTRUTURA FÍSICA. 
+
+Precisamos abrir cada base separadamente porque:
+
+	(a) Todos os anos, novas variáveis podem ser incluídas ou excluídas.
+	
+	(b) Em alguns casos, há variáveis que modificam o nome.
+	
+Verificamos as variáveis disponíveis em cada Censo e vamos uniformizar as bases de dados:
+
+	(a) Sempre que possível, manteremos as mesmas variáveis. Variáveis importantes
+	que foram acrescentadas no decorrer dos anos também serão mantidas.
+	
+	(b) Deixaremos os nomes das variáveis iguais em todas as bases. 
+	
+	(c) Ficamos com variáveis de identificação da escola, infraestrutura física e de etapas de Ensino.
+
+*/
+	
+*1*
+* CONVERTING FROM .CSV TO .DTA
+*--------------------------------------------------------------------------------------------------------------------------------*
+
+*2014-2017*
+forvalues year = 2014/2017 {
+	import	delimited "$input_census/`year'/DADOS/ESCOLAS.CSV", delimiter("|") clear
+	rename 	*, upper
+	save 	"$output_census/Escolas`year'", replace
+}	
+
+	
+*2*
+*RENAMING
+*--------------------------------------------------------------------------------------------------------------------------------*
+
+
+*2007
+*----------------------------------------------------------------------------------------------------------------------------*
+use "$output_census/Escolas2007", clear
+keep 	ANO_CENSO	PK_COD_ENTIDADE	DESC_SITUACAO_FUNCIONAMENTO	FK_COD_ESTADO FK_COD_MUNICIPIO	ID_DEPENDENCIA_ADM	ID_LOCALIZACAO	ID_LOCAL_FUNC_PREDIO_ESCOLAR	ID_LOCAL_FUNC_SALAS_EMPRESA	ID_ESCOLA_COMP_PREDIO	ID_LOCAL_FUNC_PRISIONAL	ID_LOCAL_FUNC_TEMPLO_IGREJA	ID_LOCAL_FUNC_CASA_PROFESSOR	ID_LOCAL_FUNC_GALPAO	ID_LOCAL_FUNC_OUTROS	ID_LOCAL_FUNC_SALAS_OUTRA_ESC	ID_AGUA_FILTRADA	ID_AGUA_INEXISTENTE	ID_ENERGIA_INEXISTENTE	ID_ESGOTO_INEXISTENTE	ID_LIXO_COLETA_PERIODICA	ID_LIXO_RECICLA	ID_SALA_DIRETORIA	ID_SALA_PROFESSOR	ID_LABORATORIO_INFORMATICA	ID_LABORATORIO_CIENCIAS	ID_QUADRA_ESPORTES	ID_COZINHA	ID_BIBLIOTECA	NUM_SALAS_EXISTENTES	ID_EQUIP_TV	ID_EQUIP_VIDEOCASSETE	ID_EQUIP_DVD	ID_EQUIP_PARABOLICA	ID_EQUIP_COPIADORA	ID_EQUIP_RETRO	ID_EQUIP_IMPRESSORA	NUM_COMPUTADORES	ID_INTERNET	NUM_FUNCIONARIOS	ID_ALIMENTACAO	
+
+order 	ANO_CENSO	PK_COD_ENTIDADE	DESC_SITUACAO_FUNCIONAMENTO	FK_COD_ESTADO FK_COD_MUNICIPIO	ID_DEPENDENCIA_ADM	ID_LOCALIZACAO	ID_LOCAL_FUNC_PREDIO_ESCOLAR	ID_LOCAL_FUNC_SALAS_EMPRESA	ID_ESCOLA_COMP_PREDIO	ID_LOCAL_FUNC_PRISIONAL	ID_LOCAL_FUNC_TEMPLO_IGREJA	ID_LOCAL_FUNC_CASA_PROFESSOR	ID_LOCAL_FUNC_GALPAO	ID_LOCAL_FUNC_OUTROS	ID_LOCAL_FUNC_SALAS_OUTRA_ESC	ID_AGUA_FILTRADA	ID_AGUA_INEXISTENTE	ID_ENERGIA_INEXISTENTE	ID_ESGOTO_INEXISTENTE	ID_LIXO_COLETA_PERIODICA	ID_LIXO_RECICLA	ID_SALA_DIRETORIA	ID_SALA_PROFESSOR	ID_LABORATORIO_INFORMATICA	ID_LABORATORIO_CIENCIAS	ID_QUADRA_ESPORTES	ID_COZINHA	ID_BIBLIOTECA	NUM_SALAS_EXISTENTES	ID_EQUIP_TV	ID_EQUIP_VIDEOCASSETE	ID_EQUIP_DVD	ID_EQUIP_PARABOLICA	ID_EQUIP_COPIADORA	ID_EQUIP_RETRO	ID_EQUIP_IMPRESSORA	NUM_COMPUTADORES	ID_INTERNET	NUM_FUNCIONARIOS	ID_ALIMENTACAO	
+
+rename (ANO_CENSO-ID_ALIMENTACAO) (year	codschool	operation	coduf 	codmunic	network	location	OwnBuilding	CompanyRooms	RoomsAnotherSchool	PrisionalSystem	Church	TeacherHouse	Storage	Other	SharedBuilding	FilteredWater	WaterAccess1	EnergyAccess1	SewerAccess1	WasteCollection	WasteRecycling	PrincipalRoom	TeacherRoom	ComputerLab	ScienceLab	SportCourt	Kitchen	Library	TotalClasses	TV	VCR	DVD	Antenna	CopyingMachine	ProjectorMachine	Printer	NumberComputer	InternetAccess	SchoolEmployees	MealsForStudents) 
+destring, replace
+
+save "$output_census/Escolas2007.dta", replace
+
+*2008
+*----------------------------------------------------------------------------------------------------------------------------
+use "$output_census/Escolas2008", clear
+keep   ANO_CENSO	PK_COD_ENTIDADE	DESC_SITUACAO_FUNCIONAMENTO	FK_COD_ESTADO 	FK_COD_MUNICIPIO	ID_DEPENDENCIA_ADM	ID_LOCALIZACAO	ID_LOCAL_FUNC_PREDIO_ESCOLAR	ID_LOCAL_FUNC_SALAS_EMPRESA	ID_ESCOLA_COMP_PREDIO	ID_LOCAL_FUNC_PRISIONAL	ID_LOCAL_FUNC_TEMPLO_IGREJA	ID_LOCAL_FUNC_CASA_PROFESSOR	ID_LOCAL_FUNC_GALPAO	ID_LOCAL_FUNC_OUTROS	ID_LOCAL_FUNC_SALAS_OUTRA_ESC	ID_AGUA_FILTRADA	ID_AGUA_INEXISTENTE	ID_ENERGIA_INEXISTENTE	ID_ESGOTO_INEXISTENTE	ID_LIXO_COLETA_PERIODICA	ID_LIXO_RECICLA	ID_SALA_DIRETORIA	ID_SALA_PROFESSOR	ID_LABORATORIO_INFORMATICA	ID_LABORATORIO_CIENCIAS	ID_QUADRA_ESPORTES	ID_COZINHA	ID_BIBLIOTECA	NUM_SALAS_EXISTENTES	ID_EQUIP_TV	ID_EQUIP_VIDEOCASSETE	ID_EQUIP_DVD	ID_EQUIP_PARABOLICA	ID_EQUIP_COPIADORA	ID_EQUIP_RETRO	ID_EQUIP_IMPRESSORA	NUM_COMPUTADORES	ID_INTERNET	ID_BANDA_LARGA NUM_FUNCIONARIOS	ID_ALIMENTACAO	
+
+order  ANO_CENSO	PK_COD_ENTIDADE	DESC_SITUACAO_FUNCIONAMENTO	FK_COD_ESTADO 	FK_COD_MUNICIPIO	ID_DEPENDENCIA_ADM	ID_LOCALIZACAO	ID_LOCAL_FUNC_PREDIO_ESCOLAR	ID_LOCAL_FUNC_SALAS_EMPRESA	ID_ESCOLA_COMP_PREDIO	ID_LOCAL_FUNC_PRISIONAL	ID_LOCAL_FUNC_TEMPLO_IGREJA	ID_LOCAL_FUNC_CASA_PROFESSOR	ID_LOCAL_FUNC_GALPAO	ID_LOCAL_FUNC_OUTROS	ID_LOCAL_FUNC_SALAS_OUTRA_ESC	ID_AGUA_FILTRADA	ID_AGUA_INEXISTENTE	ID_ENERGIA_INEXISTENTE	ID_ESGOTO_INEXISTENTE	ID_LIXO_COLETA_PERIODICA	ID_LIXO_RECICLA	ID_SALA_DIRETORIA	ID_SALA_PROFESSOR	ID_LABORATORIO_INFORMATICA	ID_LABORATORIO_CIENCIAS	ID_QUADRA_ESPORTES	ID_COZINHA	ID_BIBLIOTECA	NUM_SALAS_EXISTENTES	ID_EQUIP_TV	ID_EQUIP_VIDEOCASSETE	ID_EQUIP_DVD	ID_EQUIP_PARABOLICA	ID_EQUIP_COPIADORA	ID_EQUIP_RETRO	ID_EQUIP_IMPRESSORA	NUM_COMPUTADORES	ID_INTERNET	ID_BANDA_LARGA NUM_FUNCIONARIOS	ID_ALIMENTACAO	
+
+rename (ANO_CENSO-ID_ALIMENTACAO) (year	codschool	operation	coduf 	codmunic	network	location	OwnBuilding	CompanyRooms	RoomsAnotherSchool	PrisionalSystem	Church	TeacherHouse	Storage	Other	SharedBuilding	FilteredWater	WaterAccess1	EnergyAccess1	SewerAccess1	WasteCollection	WasteRecycling	PrincipalRoom	TeacherRoom	ComputerLab	ScienceLab	SportCourt	Kitchen	Library	TotalClasses	TV	VCR	DVD	Antenna	CopyingMachine	ProjectorMachine	Printer	NumberComputer	InternetAccess	BroadBandInternet SchoolEmployees	MealsForStudents) 
+destring, replace
+
+save "$output_census/Escolas2008.dta", replace
+
+*2009
+*----------------------------------------------------------------------------------------------------------------------------
+/*Variáveis incluídas:
+(a)Sala de Leitura.
+(b)Internet Banda Larga.
+(c)Ensino Fundamental organizado em Ciclos.*/
+use "$output_census/Escolas2009", clear
+
+keep    ANO_CENSO	PK_COD_ENTIDADE	DESC_SITUACAO_FUNCIONAMENTO	FK_COD_ESTADO 	FK_COD_MUNICIPIO	ID_DEPENDENCIA_ADM	ID_LOCALIZACAO	ID_LOCAL_FUNC_PREDIO_ESCOLAR	ID_LOCAL_FUNC_SALAS_EMPRESA	ID_ESCOLA_COMP_PREDIO	ID_LOCAL_FUNC_PRISIONAL	ID_LOCAL_FUNC_TEMPLO_IGREJA	ID_LOCAL_FUNC_CASA_PROFESSOR	ID_LOCAL_FUNC_GALPAO	ID_LOCAL_FUNC_OUTROS	ID_LOCAL_FUNC_SALAS_OUTRA_ESC	ID_AGUA_FILTRADA	ID_AGUA_INEXISTENTE	ID_ENERGIA_INEXISTENTE	ID_ESGOTO_INEXISTENTE	ID_LIXO_COLETA_PERIODICA	ID_LIXO_RECICLA	ID_SALA_DIRETORIA	ID_SALA_PROFESSOR	ID_LABORATORIO_INFORMATICA	ID_LABORATORIO_CIENCIAS	ID_QUADRA_ESPORTES	ID_COZINHA	ID_BIBLIOTECA	ID_SALA_LEITURA	NUM_SALAS_EXISTENTES	ID_EQUIP_TV	ID_EQUIP_VIDEOCASSETE	ID_EQUIP_DVD	ID_EQUIP_PARABOLICA	ID_EQUIP_COPIADORA	ID_EQUIP_RETRO	ID_EQUIP_IMPRESSORA	NUM_COMPUTADORES	ID_INTERNET	ID_BANDA_LARGA	NUM_FUNCIONARIOS	ID_ALIMENTACAO		DT_ANO_LETIVO_INICIO DT_ANO_LETIVO_TERMINO ID_FUND_CICLOS
+
+order   ANO_CENSO	PK_COD_ENTIDADE	DESC_SITUACAO_FUNCIONAMENTO	FK_COD_ESTADO 	FK_COD_MUNICIPIO	ID_DEPENDENCIA_ADM	ID_LOCALIZACAO	ID_LOCAL_FUNC_PREDIO_ESCOLAR	ID_LOCAL_FUNC_SALAS_EMPRESA	ID_ESCOLA_COMP_PREDIO	ID_LOCAL_FUNC_PRISIONAL	ID_LOCAL_FUNC_TEMPLO_IGREJA	ID_LOCAL_FUNC_CASA_PROFESSOR	ID_LOCAL_FUNC_GALPAO	ID_LOCAL_FUNC_OUTROS	ID_LOCAL_FUNC_SALAS_OUTRA_ESC	ID_AGUA_FILTRADA	ID_AGUA_INEXISTENTE	ID_ENERGIA_INEXISTENTE	ID_ESGOTO_INEXISTENTE	ID_LIXO_COLETA_PERIODICA	ID_LIXO_RECICLA	ID_SALA_DIRETORIA	ID_SALA_PROFESSOR	ID_LABORATORIO_INFORMATICA	ID_LABORATORIO_CIENCIAS	ID_QUADRA_ESPORTES	ID_COZINHA	ID_BIBLIOTECA	ID_SALA_LEITURA	NUM_SALAS_EXISTENTES	ID_EQUIP_TV	ID_EQUIP_VIDEOCASSETE	ID_EQUIP_DVD	ID_EQUIP_PARABOLICA	ID_EQUIP_COPIADORA	ID_EQUIP_RETRO	ID_EQUIP_IMPRESSORA	NUM_COMPUTADORES	ID_INTERNET	ID_BANDA_LARGA	NUM_FUNCIONARIOS	ID_ALIMENTACAO		DT_ANO_LETIVO_INICIO DT_ANO_LETIVO_TERMINO ID_FUND_CICLOS
+
+rename (ANO_CENSO-ID_FUND_CICLOS) (year	codschool	operation	coduf 	codmunic	network	location	OwnBuilding	CompanyRooms	RoomsAnotherSchool	PrisionalSystem	Church	TeacherHouse	Storage	Other	SharedBuilding	FilteredWater	WaterAccess1	EnergyAccess1	SewerAccess1	WasteCollection	WasteRecycling	PrincipalRoom	TeacherRoom	ComputerLab	ScienceLab	SportCourt	Kitchen	Library	ReadingRoom	TotalClasses	TV	VCR	DVD	Antenna	CopyingMachine	ProjectorMachine	Printer	NumberComputer	InternetAccess	BroadBandInternet	SchoolEmployees	MealsForStudents	inicio_letivo        fim_letivo CICLOS)
+destring, replace
+
+save "$output_census/Escolas2009.dta", replace
+
+*2010
+*----------------------------------------------------------------------------------------------------------------------------
+use "$output_census/Escolas2010", clear
+keep    ANO_CENSO	PK_COD_ENTIDADE	DESC_SITUACAO_FUNCIONAMENTO	FK_COD_ESTADO 	FK_COD_MUNICIPIO	ID_DEPENDENCIA_ADM	ID_LOCALIZACAO	ID_LOCAL_FUNC_PREDIO_ESCOLAR	ID_LOCAL_FUNC_SALAS_EMPRESA	ID_ESCOLA_COMP_PREDIO	ID_LOCAL_FUNC_PRISIONAL	ID_LOCAL_FUNC_TEMPLO_IGREJA	ID_LOCAL_FUNC_CASA_PROFESSOR	ID_LOCAL_FUNC_GALPAO	ID_LOCAL_FUNC_OUTROS	ID_LOCAL_FUNC_SALAS_OUTRA_ESC	ID_AGUA_FILTRADA	ID_AGUA_INEXISTENTE	ID_ENERGIA_INEXISTENTE	ID_ESGOTO_INEXISTENTE	ID_LIXO_COLETA_PERIODICA	ID_LIXO_RECICLA	ID_SALA_DIRETORIA	ID_SALA_PROFESSOR	ID_LABORATORIO_INFORMATICA	ID_LABORATORIO_CIENCIAS	ID_QUADRA_ESPORTES	ID_COZINHA	ID_BIBLIOTECA	ID_SALA_LEITURA	NUM_SALAS_EXISTENTES	ID_EQUIP_TV	ID_EQUIP_VIDEOCASSETE	ID_EQUIP_DVD	ID_EQUIP_PARABOLICA	ID_EQUIP_COPIADORA	ID_EQUIP_RETRO	ID_EQUIP_IMPRESSORA	NUM_COMPUTADORES	ID_INTERNET	ID_BANDA_LARGA	NUM_FUNCIONARIOS	ID_ALIMENTACAO		DT_ANO_LETIVO_INICIO DT_ANO_LETIVO_TERMINO ID_FUND_CICLOS
+
+order   ANO_CENSO	PK_COD_ENTIDADE	DESC_SITUACAO_FUNCIONAMENTO	FK_COD_ESTADO   FK_COD_MUNICIPIO	ID_DEPENDENCIA_ADM	ID_LOCALIZACAO	ID_LOCAL_FUNC_PREDIO_ESCOLAR	ID_LOCAL_FUNC_SALAS_EMPRESA	ID_ESCOLA_COMP_PREDIO	ID_LOCAL_FUNC_PRISIONAL	ID_LOCAL_FUNC_TEMPLO_IGREJA	ID_LOCAL_FUNC_CASA_PROFESSOR	ID_LOCAL_FUNC_GALPAO	ID_LOCAL_FUNC_OUTROS	ID_LOCAL_FUNC_SALAS_OUTRA_ESC	ID_AGUA_FILTRADA	ID_AGUA_INEXISTENTE	ID_ENERGIA_INEXISTENTE	ID_ESGOTO_INEXISTENTE	ID_LIXO_COLETA_PERIODICA	ID_LIXO_RECICLA	ID_SALA_DIRETORIA	ID_SALA_PROFESSOR	ID_LABORATORIO_INFORMATICA	ID_LABORATORIO_CIENCIAS	ID_QUADRA_ESPORTES	ID_COZINHA	ID_BIBLIOTECA	ID_SALA_LEITURA	NUM_SALAS_EXISTENTES	ID_EQUIP_TV	ID_EQUIP_VIDEOCASSETE	ID_EQUIP_DVD	ID_EQUIP_PARABOLICA	ID_EQUIP_COPIADORA	ID_EQUIP_RETRO	ID_EQUIP_IMPRESSORA	NUM_COMPUTADORES	ID_INTERNET	ID_BANDA_LARGA	NUM_FUNCIONARIOS	ID_ALIMENTACAO		DT_ANO_LETIVO_INICIO DT_ANO_LETIVO_TERMINO ID_FUND_CICLOS
+
+rename (ANO_CENSO-ID_FUND_CICLOS) (year	codschool	operation	coduf 	codmunic	network	location	OwnBuilding	CompanyRooms	RoomsAnotherSchool	PrisionalSystem	Church	TeacherHouse	Storage	Other	SharedBuilding	FilteredWater	WaterAccess1	EnergyAccess1	SewerAccess1	WasteCollection	WasteRecycling	PrincipalRoom	TeacherRoom	ComputerLab	ScienceLab	SportCourt	Kitchen	Library	ReadingRoom	TotalClasses	TV	VCR	DVD	Antenna	CopyingMachine	ProjectorMachine	Printer	NumberComputer	InternetAccess	BroadBandInternet	SchoolEmployees	MealsForStudents	inicio_letivo        fim_letivo CICLOS)
+destring, replace
+
+save "$output_census/Escolas2010.dta", replace
+
+*2011
+*----------------------------------------------------------------------------------------------------------------------------
+/*Variáveis incluídas:
+(a)Quadra de esporta descoberta.
+(b)Quadra de esporta coberta.*/
+use "$output_census/Escolas2011", clear
+keep    ANO_CENSO	PK_COD_ENTIDADE	DESC_SITUACAO_FUNCIONAMENTO	FK_COD_ESTADO 	FK_COD_MUNICIPIO	ID_DEPENDENCIA_ADM	ID_LOCALIZACAO	ID_LOCAL_FUNC_PREDIO_ESCOLAR	ID_LOCAL_FUNC_SALAS_EMPRESA	ID_ESCOLA_COMP_PREDIO	ID_LOCAL_FUNC_PRISIONAL	ID_LOCAL_FUNC_TEMPLO_IGREJA	ID_LOCAL_FUNC_CASA_PROFESSOR	ID_LOCAL_FUNC_GALPAO	ID_LOCAL_FUNC_OUTROS	ID_LOCAL_FUNC_SALAS_OUTRA_ESC	ID_AGUA_FILTRADA	ID_AGUA_INEXISTENTE	ID_ENERGIA_INEXISTENTE	ID_ESGOTO_INEXISTENTE	ID_LIXO_COLETA_PERIODICA	ID_LIXO_RECICLA	ID_SALA_DIRETORIA	ID_SALA_PROFESSOR	ID_LABORATORIO_INFORMATICA	ID_LABORATORIO_CIENCIAS	ID_QUADRA_ESPORTES_COBERTA	ID_QUADRA_ESPORTES_DESCOBERTA	ID_COZINHA	ID_BIBLIOTECA	ID_SALA_LEITURA	NUM_SALAS_EXISTENTES	ID_EQUIP_TV	ID_EQUIP_VIDEOCASSETE	ID_EQUIP_DVD	ID_EQUIP_PARABOLICA	ID_EQUIP_COPIADORA	ID_EQUIP_RETRO	ID_EQUIP_IMPRESSORA	NUM_COMPUTADORES	ID_INTERNET	ID_BANDA_LARGA	NUM_FUNCIONARIOS	ID_ALIMENTACAO		DT_ANO_LETIVO_INICIO DT_ANO_LETIVO_TERMINO ID_FUND_CICLOS
+
+order   ANO_CENSO	PK_COD_ENTIDADE	DESC_SITUACAO_FUNCIONAMENTO	FK_COD_ESTADO 	FK_COD_MUNICIPIO	ID_DEPENDENCIA_ADM	ID_LOCALIZACAO	ID_LOCAL_FUNC_PREDIO_ESCOLAR	ID_LOCAL_FUNC_SALAS_EMPRESA	ID_ESCOLA_COMP_PREDIO	ID_LOCAL_FUNC_PRISIONAL	ID_LOCAL_FUNC_TEMPLO_IGREJA	ID_LOCAL_FUNC_CASA_PROFESSOR	ID_LOCAL_FUNC_GALPAO	ID_LOCAL_FUNC_OUTROS	ID_LOCAL_FUNC_SALAS_OUTRA_ESC	ID_AGUA_FILTRADA	ID_AGUA_INEXISTENTE	ID_ENERGIA_INEXISTENTE	ID_ESGOTO_INEXISTENTE	ID_LIXO_COLETA_PERIODICA	ID_LIXO_RECICLA	ID_SALA_DIRETORIA	ID_SALA_PROFESSOR	ID_LABORATORIO_INFORMATICA	ID_LABORATORIO_CIENCIAS	ID_QUADRA_ESPORTES_COBERTA	ID_QUADRA_ESPORTES_DESCOBERTA	ID_COZINHA	ID_BIBLIOTECA	ID_SALA_LEITURA	NUM_SALAS_EXISTENTES	ID_EQUIP_TV	ID_EQUIP_VIDEOCASSETE	ID_EQUIP_DVD	ID_EQUIP_PARABOLICA	ID_EQUIP_COPIADORA	ID_EQUIP_RETRO	ID_EQUIP_IMPRESSORA	NUM_COMPUTADORES	ID_INTERNET	ID_BANDA_LARGA	NUM_FUNCIONARIOS	ID_ALIMENTACAO		DT_ANO_LETIVO_INICIO DT_ANO_LETIVO_TERMINO ID_FUND_CICLOS
+
+rename (ANO_CENSO-ID_FUND_CICLOS) (year	codschool	operation	coduf 	codmunic	network	location	OwnBuilding	CompanyRooms	RoomsAnotherSchool	PrisionalSystem	Church	TeacherHouse	Storage	Other	SharedBuilding	FilteredWater	WaterAccess1	EnergyAccess1	SewerAccess1	WasteCollection	WasteRecycling	PrincipalRoom	TeacherRoom	ComputerLab	ScienceLab	OpenedSportCourt	ClosedSportCourt	Kitchen	Library	ReadingRoom	TotalClasses	TV	VCR	DVD	Antenna	CopyingMachine	ProjectorMachine	Printer	NumberComputer	InternetAccess	BroadBandInternet	SchoolEmployees	MealsForStudents	inicio_letivo        fim_letivo CICLOS)
+destring, replace
+
+save "$output_census/Escolas2011.dta", replace
+
+*2012
+*----------------------------------------------------------------------------------------------------------------------------
+/*Variáveis incluídas:
+(a)Existência de aparelho de som, muiltimidia, fax e câmera fotográfica.*/
+use "$output_census/Escolas2012", clear
+keep    ANO_CENSO	PK_COD_ENTIDADE	DESC_SITUACAO_FUNCIONAMENTO	FK_COD_ESTADO FK_COD_MUNICIPIO	ID_DEPENDENCIA_ADM	ID_LOCALIZACAO	ID_LOCAL_FUNC_PREDIO_ESCOLAR	ID_LOCAL_FUNC_SALAS_EMPRESA	ID_LOCAL_FUNC_PRISIONAL	ID_LOCAL_FUNC_TEMPLO_IGREJA	ID_LOCAL_FUNC_CASA_PROFESSOR	ID_LOCAL_FUNC_GALPAO	ID_LOCAL_FUNC_OUTROS	ID_LOCAL_FUNC_SALAS_OUTRA_ESC	ID_ESCOLA_COMP_PREDIO	ID_AGUA_FILTRADA	ID_AGUA_INEXISTENTE	ID_ENERGIA_INEXISTENTE	ID_ESGOTO_INEXISTENTE	ID_LIXO_COLETA_PERIODICA	ID_LIXO_RECICLA	ID_SALA_DIRETORIA	ID_SALA_PROFESSOR	ID_LABORATORIO_INFORMATICA	ID_LABORATORIO_CIENCIAS	ID_QUADRA_ESPORTES_COBERTA	ID_QUADRA_ESPORTES_DESCOBERTA	ID_COZINHA	ID_BIBLIOTECA	ID_SALA_LEITURA	NUM_SALAS_EXISTENTES	ID_EQUIP_TV	ID_EQUIP_VIDEOCASSETE	ID_EQUIP_DVD	ID_EQUIP_PARABOLICA	ID_EQUIP_COPIADORA	ID_EQUIP_RETRO	ID_EQUIP_IMPRESSORA	ID_EQUIP_SOM	ID_EQUIP_MULTIMIDIA	ID_EQUIP_FAX	ID_EQUIP_FOTO		NUM_COMPUTADORES	ID_INTERNET	ID_BANDA_LARGA	NUM_FUNCIONARIOS	ID_ALIMENTACAO	DT_ANO_LETIVO_INICIO DT_ANO_LETIVO_TERMINO ID_FUND_CICLOS
+
+order   ANO_CENSO	PK_COD_ENTIDADE	DESC_SITUACAO_FUNCIONAMENTO	FK_COD_ESTADO FK_COD_MUNICIPIO	ID_DEPENDENCIA_ADM	ID_LOCALIZACAO	ID_LOCAL_FUNC_PREDIO_ESCOLAR	ID_LOCAL_FUNC_SALAS_EMPRESA	ID_LOCAL_FUNC_PRISIONAL	ID_LOCAL_FUNC_TEMPLO_IGREJA	ID_LOCAL_FUNC_CASA_PROFESSOR	ID_LOCAL_FUNC_GALPAO	ID_LOCAL_FUNC_OUTROS	ID_LOCAL_FUNC_SALAS_OUTRA_ESC	ID_ESCOLA_COMP_PREDIO	ID_AGUA_FILTRADA	ID_AGUA_INEXISTENTE	ID_ENERGIA_INEXISTENTE	ID_ESGOTO_INEXISTENTE	ID_LIXO_COLETA_PERIODICA	ID_LIXO_RECICLA	ID_SALA_DIRETORIA	ID_SALA_PROFESSOR	ID_LABORATORIO_INFORMATICA	ID_LABORATORIO_CIENCIAS	ID_QUADRA_ESPORTES_COBERTA	ID_QUADRA_ESPORTES_DESCOBERTA	ID_COZINHA	ID_BIBLIOTECA	ID_SALA_LEITURA	NUM_SALAS_EXISTENTES	ID_EQUIP_TV	ID_EQUIP_VIDEOCASSETE	ID_EQUIP_DVD	ID_EQUIP_PARABOLICA	ID_EQUIP_COPIADORA	ID_EQUIP_RETRO	ID_EQUIP_IMPRESSORA	ID_EQUIP_SOM	ID_EQUIP_MULTIMIDIA	ID_EQUIP_FAX	ID_EQUIP_FOTO		NUM_COMPUTADORES	ID_INTERNET	ID_BANDA_LARGA	NUM_FUNCIONARIOS	ID_ALIMENTACAO	DT_ANO_LETIVO_INICIO DT_ANO_LETIVO_TERMINO ID_FUND_CICLOS
+
+rename (ANO_CENSO-ID_FUND_CICLOS) (year	codschool	operation	coduf 	codmunic	network	location	OwnBuilding	CompanyRooms	RoomsAnotherSchool	PrisionalSystem	Church	TeacherHouse	Storage	Other	SharedBuilding	FilteredWater	WaterAccess1	EnergyAccess1	SewerAccess1	WasteCollection	WasteRecycling	PrincipalRoom	TeacherRoom	ComputerLab	ScienceLab	OpenedSportCourt	ClosedSportCourt	Kitchen	Library	ReadingRoom	TotalClasses	TV	VCR	DVD	Antenna	CopyingMachine	ProjectorMachine	Printer	Stereo	Multimidia	Fax	Camera NumberComputer	InternetAccess	BroadBandInternet	SchoolEmployees	MealsForStudents inicio_letivo        fim_letivo CICLOS)
+destring, replace
+
+save "$output_census/Escolas2012.dta", replace
+
+*2013
+*----------------------------------------------------------------------------------------------------------------------------
+*Nessa base, em vez de a escola responder sim ou não para a relação de equipamentos eletrônicos, ela responde a quantidade.
+use "$output_census/Escolas2013", clear
+keep    ANO_CENSO	PK_COD_ENTIDADE	DESC_SITUACAO_FUNCIONAMENTO	FK_COD_ESTADO 	FK_COD_MUNICIPIO	ID_DEPENDENCIA_ADM	ID_LOCALIZACAO	ID_LOCAL_FUNC_PREDIO_ESCOLAR	ID_LOCAL_FUNC_SALAS_EMPRESA	ID_ESCOLA_COMP_PREDIO	ID_LOCAL_FUNC_UNID_PRISIONAL	ID_LOCAL_FUNC_TEMPLO_IGREJA	ID_LOCAL_FUNC_CASA_PROFESSOR	ID_LOCAL_FUNC_GALPAO	ID_LOCAL_FUNC_OUTROS	ID_LOCAL_FUNC_SALAS_OUTRA_ESC	ID_AGUA_FILTRADA	ID_AGUA_INEXISTENTE	ID_ENERGIA_INEXISTENTE	ID_ESGOTO_INEXISTENTE	ID_LIXO_COLETA_PERIODICA	ID_LIXO_RECICLA	ID_SALA_DIRETORIA	ID_SALA_PROFESSOR	ID_LABORATORIO_INFORMATICA	ID_LABORATORIO_CIENCIAS	ID_QUADRA_ESPORTES_COBERTA	ID_QUADRA_ESPORTES_DESCOBERTA	ID_COZINHA	ID_BIBLIOTECA	ID_SALA_LEITURA	NUM_SALAS_EXISTENTES	NUM_EQUIP_TV	NUM_EQUIP_VIDEOCASSETE	NUM_EQUIP_DVD	NUM_EQUIP_PARABOLICA	NUM_EQUIP_COPIADORA	NUM_EQUIP_RETRO	NUM_EQUIP_IMPRESSORA	NUM_EQUIP_SOM	NUM_EQUIP_MULTIMIDIA	NUM_EQUIP_FAX	NUM_EQUIP_FOTO	NUM_COMPUTADORES	ID_INTERNET	ID_BANDA_LARGA	NUM_FUNCIONARIOS	ID_ALIMENTACAO		DT_ANO_LETIVO_INICIO DT_ANO_LETIVO_TERMINO ID_FUND_CICLOS
+
+order   ANO_CENSO	PK_COD_ENTIDADE	DESC_SITUACAO_FUNCIONAMENTO	FK_COD_ESTADO 	FK_COD_MUNICIPIO	ID_DEPENDENCIA_ADM	ID_LOCALIZACAO	ID_LOCAL_FUNC_PREDIO_ESCOLAR	ID_LOCAL_FUNC_SALAS_EMPRESA	ID_ESCOLA_COMP_PREDIO	ID_LOCAL_FUNC_UNID_PRISIONAL	ID_LOCAL_FUNC_TEMPLO_IGREJA	ID_LOCAL_FUNC_CASA_PROFESSOR	ID_LOCAL_FUNC_GALPAO	ID_LOCAL_FUNC_OUTROS	ID_LOCAL_FUNC_SALAS_OUTRA_ESC	ID_AGUA_FILTRADA	ID_AGUA_INEXISTENTE	ID_ENERGIA_INEXISTENTE	ID_ESGOTO_INEXISTENTE	ID_LIXO_COLETA_PERIODICA	ID_LIXO_RECICLA	ID_SALA_DIRETORIA	ID_SALA_PROFESSOR	ID_LABORATORIO_INFORMATICA	ID_LABORATORIO_CIENCIAS	ID_QUADRA_ESPORTES_COBERTA	ID_QUADRA_ESPORTES_DESCOBERTA	ID_COZINHA	ID_BIBLIOTECA	ID_SALA_LEITURA	NUM_SALAS_EXISTENTES	NUM_EQUIP_TV	NUM_EQUIP_VIDEOCASSETE	NUM_EQUIP_DVD	NUM_EQUIP_PARABOLICA	NUM_EQUIP_COPIADORA	NUM_EQUIP_RETRO	NUM_EQUIP_IMPRESSORA	NUM_EQUIP_SOM	NUM_EQUIP_MULTIMIDIA	NUM_EQUIP_FAX	NUM_EQUIP_FOTO	NUM_COMPUTADORES	ID_INTERNET	ID_BANDA_LARGA	NUM_FUNCIONARIOS	ID_ALIMENTACAO		DT_ANO_LETIVO_INICIO DT_ANO_LETIVO_TERMINO ID_FUND_CICLOS
+
+rename (ANO_CENSO-ID_FUND_CICLOS)  (year	codschool	operation	coduf 	codmunic	network	location	OwnBuilding	CompanyRooms	RoomsAnotherSchool	PrisionalSystem	Church	TeacherHouse	Storage	Other	SharedBuilding	FilteredWater	WaterAccess1	EnergyAccess1	SewerAccess1	WasteCollection	WasteRecycling	PrincipalRoom	TeacherRoom	ComputerLab	ScienceLab	OpenedSportCourt	ClosedSportCourt	Kitchen	Library	ReadingRoom	TotalClasses	NumberTV	NumberVCR	NumberDVD	NumberAntenna	NumberCopyingMachine	NumberProjectorMachine	NumberPrinter	NumberStereo	NumberMultimidia	NumberFax	NumberCamera	NumberComputer	InternetAccess	BroadBandInternet	SchoolEmployees	MealsForStudents		inicio_letivo        fim_letivo CICLOS)
+destring, replace
+
+save "$output_census/Escolas2013.dta", replace
+
+*2014
+*----------------------------------------------------------------------------------------------------------------------------
+use "$output_census/Escolas2014", clear
+keep    ANO_CENSO	PK_COD_ENTIDADE	DESC_SITUACAO_FUNCIONAMENTO	FK_COD_ESTADO	FK_COD_MUNICIPIO	ID_DEPENDENCIA_ADM	ID_LOCALIZACAO	ID_LOCAL_FUNC_PREDIO_ESCOLAR	ID_LOCAL_FUNC_SALAS_EMPRESA	ID_ESCOLA_COMP_PREDIO	ID_LOCAL_FUNC_UNID_PRISIONAL	ID_LOCAL_FUNC_TEMPLO_IGREJA	ID_LOCAL_FUNC_CASA_PROFESSOR	ID_LOCAL_FUNC_GALPAO	ID_LOCAL_FUNC_OUTROS	ID_LOCAL_FUNC_SALAS_OUTRA_ESC	ID_AGUA_FILTRADA	ID_AGUA_INEXISTENTE	ID_ENERGIA_INEXISTENTE	ID_ESGOTO_INEXISTENTE	ID_LIXO_COLETA_PERIODICA	ID_LIXO_RECICLA	ID_SALA_DIRETORIA	ID_SALA_PROFESSOR	ID_LABORATORIO_INFORMATICA	ID_LABORATORIO_CIENCIAS	ID_QUADRA_ESPORTES_COBERTA	ID_QUADRA_ESPORTES_DESCOBERTA	ID_COZINHA	ID_BIBLIOTECA	ID_SALA_LEITURA	NUM_SALAS_EXISTENTES	NUM_EQUIP_TV	NUM_EQUIP_VIDEOCASSETE	NUM_EQUIP_DVD	NUM_EQUIP_PARABOLICA	NUM_EQUIP_COPIADORA	NUM_EQUIP_RETRO	NUM_EQUIP_IMPRESSORA	NUM_EQUIP_SOM	NUM_EQUIP_MULTIMIDIA	NUM_EQUIP_FAX	NUM_EQUIP_FOTO	NUM_COMPUTADORES	ID_INTERNET	ID_BANDA_LARGA	NUM_FUNCIONARIOS	ID_ALIMENTACAO		DT_ANO_LETIVO_INICIO DT_ANO_LETIVO_TERMINO ID_FUND_CICLOS
+
+order   ANO_CENSO	PK_COD_ENTIDADE	DESC_SITUACAO_FUNCIONAMENTO	FK_COD_ESTADO	FK_COD_MUNICIPIO	ID_DEPENDENCIA_ADM	ID_LOCALIZACAO	ID_LOCAL_FUNC_PREDIO_ESCOLAR	ID_LOCAL_FUNC_SALAS_EMPRESA	ID_ESCOLA_COMP_PREDIO	ID_LOCAL_FUNC_UNID_PRISIONAL	ID_LOCAL_FUNC_TEMPLO_IGREJA	ID_LOCAL_FUNC_CASA_PROFESSOR	ID_LOCAL_FUNC_GALPAO	ID_LOCAL_FUNC_OUTROS	ID_LOCAL_FUNC_SALAS_OUTRA_ESC	ID_AGUA_FILTRADA	ID_AGUA_INEXISTENTE	ID_ENERGIA_INEXISTENTE	ID_ESGOTO_INEXISTENTE	ID_LIXO_COLETA_PERIODICA	ID_LIXO_RECICLA	ID_SALA_DIRETORIA	ID_SALA_PROFESSOR	ID_LABORATORIO_INFORMATICA	ID_LABORATORIO_CIENCIAS	ID_QUADRA_ESPORTES_COBERTA	ID_QUADRA_ESPORTES_DESCOBERTA	ID_COZINHA	ID_BIBLIOTECA	ID_SALA_LEITURA	NUM_SALAS_EXISTENTES	NUM_EQUIP_TV	NUM_EQUIP_VIDEOCASSETE	NUM_EQUIP_DVD	NUM_EQUIP_PARABOLICA	NUM_EQUIP_COPIADORA	NUM_EQUIP_RETRO	NUM_EQUIP_IMPRESSORA	NUM_EQUIP_SOM	NUM_EQUIP_MULTIMIDIA	NUM_EQUIP_FAX	NUM_EQUIP_FOTO	NUM_COMPUTADORES	ID_INTERNET	ID_BANDA_LARGA	NUM_FUNCIONARIOS	ID_ALIMENTACAO		DT_ANO_LETIVO_INICIO DT_ANO_LETIVO_TERMINO ID_FUND_CICLOS
+
+rename (ANO_CENSO-ID_FUND_CICLOS)  (year	codschool	operation	coduf	codmunic	network	location	OwnBuilding	CompanyRooms	RoomsAnotherSchool	PrisionalSystem	Church	TeacherHouse	Storage	Other	SharedBuilding	FilteredWater	WaterAccess1	EnergyAccess1	SewerAccess1	WasteCollection	WasteRecycling	PrincipalRoom	TeacherRoom	ComputerLab	ScienceLab	OpenedSportCourt	ClosedSportCourt	Kitchen	Library	ReadingRoom	TotalClasses	NumberTV	NumberVCR	NumberDVD	NumberAntenna	NumberCopyingMachine	NumberProjectorMachine	NumberPrinter	NumberStereo	NumberMultimidia	NumberFax	NumberCamera	NumberComputer	InternetAccess	BroadBandInternet	SchoolEmployees	MealsForStudents		inicio_letivo        fim_letivo CICLOS)
+destring, replace
+
+save "$output_census/Escolas2014.dta", replace
+
+
+*2015
+*----------------------------------------------------------------------------------------------------------------------------
+use "$output_census/Escolas2015", clear
+keep    NU_ANO_CENSO	CO_ENTIDADE	TP_SITUACAO_FUNCIONAMENTO	CO_UF	CO_MUNICIPIO	TP_DEPENDENCIA	TP_LOCALIZACAO	TP_OCUPACAO_PREDIO_ESCOLAR	IN_LOCAL_FUNC_SALAS_EMPRESA	IN_LOCAL_FUNC_UNID_PRISIONAL	IN_LOCAL_FUNC_TEMPLO_IGREJA	IN_LOCAL_FUNC_CASA_PROFESSOR	TP_OCUPACAO_GALPAO	IN_LOCAL_FUNC_SALAS_OUTRA_ESC	IN_LOCAL_FUNC_OUTROS	IN_PREDIO_COMPARTILHADO	IN_AGUA_FILTRADA	IN_AGUA_INEXISTENTE	IN_ENERGIA_INEXISTENTE	IN_ESGOTO_INEXISTENTE	IN_LIXO_COLETA_PERIODICA	IN_LIXO_RECICLA	IN_SALA_DIRETORIA	IN_SALA_PROFESSOR	IN_LABORATORIO_INFORMATICA	IN_LABORATORIO_CIENCIAS	IN_QUADRA_ESPORTES_COBERTA	IN_QUADRA_ESPORTES_DESCOBERTA	IN_COZINHA	IN_BIBLIOTECA	IN_SALA_LEITURA	NU_SALAS_EXISTENTES	NU_EQUIP_TV	NU_EQUIP_VIDEOCASSETE	NU_EQUIP_DVD	NU_EQUIP_PARABOLICA	NU_EQUIP_COPIADORA	NU_EQUIP_RETROPROJETOR	NU_EQUIP_IMPRESSORA	NU_EQUIP_SOM	NU_EQUIP_MULTIMIDIA	NU_EQUIP_FAX	NU_EQUIP_FOTO	NU_COMPUTADOR	IN_INTERNET	IN_BANDA_LARGA	NU_FUNCIONARIOS	IN_ALIMENTACAO	DT_ANO_LETIVO_INICIO DT_ANO_LETIVO_TERMINO IN_FUNDAMENTAL_CICLOS
+
+order   NU_ANO_CENSO	CO_ENTIDADE	TP_SITUACAO_FUNCIONAMENTO	CO_UF	CO_MUNICIPIO	TP_DEPENDENCIA	TP_LOCALIZACAO	TP_OCUPACAO_PREDIO_ESCOLAR	IN_LOCAL_FUNC_SALAS_EMPRESA	IN_LOCAL_FUNC_UNID_PRISIONAL	IN_LOCAL_FUNC_TEMPLO_IGREJA	IN_LOCAL_FUNC_CASA_PROFESSOR	TP_OCUPACAO_GALPAO	IN_LOCAL_FUNC_SALAS_OUTRA_ESC	IN_LOCAL_FUNC_OUTROS	IN_PREDIO_COMPARTILHADO	IN_AGUA_FILTRADA	IN_AGUA_INEXISTENTE	IN_ENERGIA_INEXISTENTE	IN_ESGOTO_INEXISTENTE	IN_LIXO_COLETA_PERIODICA	IN_LIXO_RECICLA	IN_SALA_DIRETORIA	IN_SALA_PROFESSOR	IN_LABORATORIO_INFORMATICA	IN_LABORATORIO_CIENCIAS	IN_QUADRA_ESPORTES_COBERTA	IN_QUADRA_ESPORTES_DESCOBERTA	IN_COZINHA	IN_BIBLIOTECA	IN_SALA_LEITURA	NU_SALAS_EXISTENTES	NU_EQUIP_TV	NU_EQUIP_VIDEOCASSETE	NU_EQUIP_DVD	NU_EQUIP_PARABOLICA	NU_EQUIP_COPIADORA	NU_EQUIP_RETROPROJETOR	NU_EQUIP_IMPRESSORA	NU_EQUIP_SOM	NU_EQUIP_MULTIMIDIA	NU_EQUIP_FAX	NU_EQUIP_FOTO	NU_COMPUTADOR	IN_INTERNET	IN_BANDA_LARGA	NU_FUNCIONARIOS	IN_ALIMENTACAO	DT_ANO_LETIVO_INICIO DT_ANO_LETIVO_TERMINO IN_FUNDAMENTAL_CICLOS
+
+rename (NU_ANO_CENSO-IN_FUNDAMENTAL_CICLOS) (year	codschool	operation	coduf	codmunic	network	location	OwnBuilding	CompanyRooms	PrisionalSystem	Church	TeacherHouse	Storage	SharedBuilding	Other	RoomsAnotherSchool	FilteredWater	WaterAccess1	EnergyAccess1	SewerAccess1	WasteCollection	WasteRecycling	PrincipalRoom	TeacherRoom	ComputerLab	ScienceLab	OpenedSportCourt	ClosedSportCourt	Kitchen	Library	ReadingRoom	TotalClasses	NumberTV	NumberVCR	NumberDVD	NumberAntenna	NumberCopyingMachine	NumberProjectorMachine	NumberPrinter	NumberStereo	NumberMultimidia	NumberFax	NumberCamera	NumberComputer	InternetAccess	BroadBandInternet	SchoolEmployees	MealsForStudents	inicio_letivo        fim_letivo CICLOS)
+destring, replace
+
+save "$output_census/Escolas2015.dta", replace
+
+*2016
+*----------------------------------------------------------------------------------------------------------------------------
+use "$output_census/Escolas2016", clear
+keep    NU_ANO_CENSO	CO_ENTIDADE	TP_SITUACAO_FUNCIONAMENTO	CO_UF	CO_MUNICIPIO	TP_DEPENDENCIA	TP_LOCALIZACAO	TP_OCUPACAO_PREDIO_ESCOLAR	IN_LOCAL_FUNC_SALAS_EMPRESA	IN_LOCAL_FUNC_UNID_PRISIONAL	IN_LOCAL_FUNC_TEMPLO_IGREJA	IN_LOCAL_FUNC_CASA_PROFESSOR	TP_OCUPACAO_GALPAO	IN_LOCAL_FUNC_SALAS_OUTRA_ESC	IN_LOCAL_FUNC_OUTROS	IN_PREDIO_COMPARTILHADO	IN_AGUA_FILTRADA	IN_AGUA_INEXISTENTE	IN_ENERGIA_INEXISTENTE	IN_ESGOTO_INEXISTENTE	IN_LIXO_COLETA_PERIODICA	IN_LIXO_RECICLA	IN_SALA_DIRETORIA	IN_SALA_PROFESSOR	IN_LABORATORIO_INFORMATICA	IN_LABORATORIO_CIENCIAS	IN_QUADRA_ESPORTES_COBERTA	IN_QUADRA_ESPORTES_DESCOBERTA	IN_COZINHA	IN_BIBLIOTECA	IN_SALA_LEITURA	NU_SALAS_EXISTENTES	NU_EQUIP_TV	NU_EQUIP_VIDEOCASSETE	NU_EQUIP_DVD	NU_EQUIP_PARABOLICA	NU_EQUIP_COPIADORA	NU_EQUIP_RETROPROJETOR	NU_EQUIP_IMPRESSORA	NU_EQUIP_SOM	NU_EQUIP_MULTIMIDIA	NU_EQUIP_FAX	NU_EQUIP_FOTO	NU_COMPUTADOR	IN_INTERNET	IN_BANDA_LARGA	NU_FUNCIONARIOS	IN_ALIMENTACAO	DT_ANO_LETIVO_INICIO DT_ANO_LETIVO_TERMINO IN_FUNDAMENTAL_CICLOS
+
+order   NU_ANO_CENSO	CO_ENTIDADE	TP_SITUACAO_FUNCIONAMENTO	CO_UF	CO_MUNICIPIO	TP_DEPENDENCIA	TP_LOCALIZACAO	TP_OCUPACAO_PREDIO_ESCOLAR	IN_LOCAL_FUNC_SALAS_EMPRESA	IN_LOCAL_FUNC_UNID_PRISIONAL	IN_LOCAL_FUNC_TEMPLO_IGREJA	IN_LOCAL_FUNC_CASA_PROFESSOR	TP_OCUPACAO_GALPAO	IN_LOCAL_FUNC_SALAS_OUTRA_ESC	IN_LOCAL_FUNC_OUTROS	IN_PREDIO_COMPARTILHADO	IN_AGUA_FILTRADA	IN_AGUA_INEXISTENTE	IN_ENERGIA_INEXISTENTE	IN_ESGOTO_INEXISTENTE	IN_LIXO_COLETA_PERIODICA	IN_LIXO_RECICLA	IN_SALA_DIRETORIA	IN_SALA_PROFESSOR	IN_LABORATORIO_INFORMATICA	IN_LABORATORIO_CIENCIAS	IN_QUADRA_ESPORTES_COBERTA	IN_QUADRA_ESPORTES_DESCOBERTA	IN_COZINHA	IN_BIBLIOTECA	IN_SALA_LEITURA	NU_SALAS_EXISTENTES	NU_EQUIP_TV	NU_EQUIP_VIDEOCASSETE	NU_EQUIP_DVD	NU_EQUIP_PARABOLICA	NU_EQUIP_COPIADORA	NU_EQUIP_RETROPROJETOR	NU_EQUIP_IMPRESSORA	NU_EQUIP_SOM	NU_EQUIP_MULTIMIDIA	NU_EQUIP_FAX	NU_EQUIP_FOTO	NU_COMPUTADOR	IN_INTERNET	IN_BANDA_LARGA	NU_FUNCIONARIOS	IN_ALIMENTACAO	DT_ANO_LETIVO_INICIO DT_ANO_LETIVO_TERMINO IN_FUNDAMENTAL_CICLOS
+
+rename (NU_ANO_CENSO-IN_FUNDAMENTAL_CICLOS) (year	codschool	operation	coduf	codmunic	network	location	OwnBuilding	CompanyRooms	PrisionalSystem	Church	TeacherHouse	Storage	SharedBuilding	Other	RoomsAnotherSchool	FilteredWater	WaterAccess1	EnergyAccess1	SewerAccess1	WasteCollection	WasteRecycling	PrincipalRoom	TeacherRoom	ComputerLab	ScienceLab	OpenedSportCourt	ClosedSportCourt	Kitchen	Library	ReadingRoom	TotalClasses	NumberTV	NumberVCR	NumberDVD	NumberAntenna	NumberCopyingMachine	NumberProjectorMachine	NumberPrinter	NumberStereo	NumberMultimidia	NumberFax	NumberCamera	NumberComputer	InternetAccess	BroadBandInternet	SchoolEmployees	MealsForStudents	inicio_letivo        fim_letivo CICLOS)
+destring, replace
+
+save "$output_census/Escolas2016.dta", replace
+
+
+*3*	
+*CLEANING
+*--------------------------------------------------------------------------------------------------------------------------------*
+
+
+*2007-2016
+*----------------------------------------------------------------------------------------------------------------------------*
+forvalues year = 2007/2016 {
+		
+		use "$output_census/Escolas`year'.dta", clear
+		
+			gen 	 codmunic2 = substr(string(codmunic), 1,6)
+			destring codmunic2, replace
+
+			if `year' == 2007 {
+				gen 	operation2          = 1 if operation == "EM ATIVIDADE"
+				replace operation2          = 2 if operation == "PARALISADA" 
+				replace operation2          = 3 if operation == "EXTINTA" 
+				drop 	operation
+				rename  operation2 operation
+			}
+			
+			if `year' >= 2009  & `year' <= 2013 {
+				replace FilteredWater       = 0 if FilteredWater == 1
+				replace FilteredWater       = 1 if FilteredWater == 2
+			}
+			
+			if `year' >= 2011  & `year' <= 2016 {
+				gen 	SportCourt          = 1 if (OpenedSportCourt == 1 | ClosedSportCourt == 1)
+				replace SportCourt          = 0 if (OpenedSportCourt == 0 & ClosedSportCourt == 0)
+			}
+			
+			if `year' >= 2013 & `year' <= 2016 {
+
+				gen 	TV 					= 1 if NumberTV 				>= 1 & !missing(NumberTV) 
+				replace TV 					= 0 if NumberTV 				== 0 
+				gen 	VCR 				= 1 if NumberVCR 				>= 1 & !missing(NumberVCR) 
+				replace VCR 				= 0 if NumberVCR 				== 0 
+				gen 	DVD 				= 1 if NumberDVD 				>= 1 & !missing(NumberDVD) 				
+				replace DVD 				= 0 if NumberDVD 	 			== 0 
+				gen 	Antenna 			= 1 if NumberAntenna 			>= 1 & !missing(NumberAntenna) 			
+				replace Antenna 			= 0 if NumberAntenna 			== 0 
+				gen 	CopyingMachine 		= 1 if NumberCopyingMachine 	>= 1 & !missing(NumberCopyingMachine) 	
+				replace CopyingMachine 		= 0 if NumberCopyingMachine 	== 0 
+				gen 	ProjectorMachine 	= 1 if NumberProjectorMachine 	>= 1 & !missing(NumberProjectorMachine) 	
+				replace ProjectorMachine 	= 0 if NumberProjectorMachine 	== 0 
+				gen 	Printer 			= 1 if NumberPrinter 			>= 1 & !missing(NumberPrinter)  			
+				replace Printer  			= 0 if NumberPrinter 			== 0 
+			
+			}
+			
+			if `year' >= 2009 & `year' <= 2016 {
+				replace inicio_letivo 		= substr(inicio_letivo, 1, 9)
+				replace fim_letivo    		= substr(fim_letivo   , 1, 9)
+				
+				foreach var of varlist *letivo {
+					gen  c`var' = date(`var', "DMY")
+					drop `var'
+				}
+				
+				gen dia_fim_letivo 			= day(cfim_letivo)
+				gen mes_fim_letivo 			= month(cfim_letivo)
+				format cinicio_letivo cfim_letivo %td
+			}
+
+				gen 	Computer 		    = (NumberComputer >  0 & !missing(NumberComputer))
+				replace Computer		    = . if missing(NumberComputer)
+				gen		WaterAccess  	    = (WaterAccess1  == 0)
+				gen 	EnergyAccess 	    = (EnergyAccess1 == 0)
+				gen 	SewerAccess  	    = (SewerAccess1  == 0)
+				foreach var of varlist  WaterAccess EnergyAccess SewerAccess {
+					replace `var' = . if `var'1 == .
+				}
+
+				egen 	 schoolresources 	= rsum(ComputerLab	EnergyAccess FilteredWater	InternetAccess	Library	MealsForStudents	PrincipalRoom	ProjectorMachine	ScienceLab	SewerAccess	SportCourt	TeacherRoom	WasteCollection	WaterAccess)
+				replace  location 			= 0 if location == 2
+				
+				save "$output_census/Escolas`year'.dta", replace
+}
+
+*4*
+*APPEND	
+*--------------------------------------------------------------------------------------------------------------------------------*
+clear
+append using "$output_census/Escolas2007.dta"
+forvalues year = 2008(1)2016 {
+	append using "$output_census/Escolas`year'.dta"
+	erase   	 "$output_census/Escolas`year'.dta"
+}
+
+	label var OwnBuilding 			"Prédio próprio"
+	label var location  			"Urbana"
+	label var FilteredWater 		"Água filtrada"
+	label var WasteCollection		"Coleta de lixo"
+	label var ComputerLab			"Laboratório de informática"
+	label var ScienceLab			"Laboratório de ciências"
+	label var SportCourt			"Quadra de esportes"
+	label var Library			"Biblioteca"
+	label var InternetAccess		"Acesso à internet"
+	label var MealsForStudents		"Refeição para os alunos"
+	label var EnergyAccess			"Energia elétrica"
+	label var SewerAccess			"Saneamento básico"
+	
+	#delimit ;
+	gen 	uf = "RO" if coduf == 11; replace uf = "AC" if coduf == 12; replace uf = "AM" if coduf == 13; replace uf = "RR" if coduf == 14;
+	replace uf = "PA" if coduf == 15; replace uf = "AP" if coduf == 16; replace uf = "TO" if coduf == 17; replace uf = "MA" if coduf == 21;
+	replace uf = "PI" if coduf == 22; replace uf = "CE" if coduf == 23; replace uf = "RN" if coduf == 24; replace uf = "PB" if coduf == 25;
+	replace uf = "PE" if coduf == 26; replace uf = "AL" if coduf == 27; replace uf = "SE" if coduf == 28; replace uf = "BA" if coduf == 29;
+	replace uf = "MG" if coduf == 31; replace uf = "ES" if coduf == 32; replace uf = "RJ" if coduf == 33; replace uf = "SP" if coduf == 35;
+	replace uf = "PR" if coduf == 41; replace uf = "SC" if coduf == 42; replace uf = "RS" if coduf == 43; replace uf = "MS" if coduf == 50;
+	replace uf = "MT" if coduf == 51; replace uf = "GO" if coduf == 52; replace uf = "DF" if coduf == 53;
+	#delimit cr
+				
+	label define state 11 "RO" 12 "AC" 13 "AM" 14 "RR" 15 "PA" 16 "AP" 17 "TO"  					///
+					   21 "MA" 22 "PI" 23 "CE" 24 "RN" 25 "PB" 26 "PE" 27 "AL" 28 "SE" 29 "BA" 		///
+					   31 "MG" 32 "ES" 33 "RJ" 35 "SP" 												///
+					   41 "PR" 42 "SC" 43 "RS" 														///
+					   50 "MS" 51 "MT" 52 "GO" 53 "DF"
+				
+	label define operation 1 "In activity" 2 "Out of activity" 3 "Extint"    4 "Extint in the year before"
+	label define network   1 "Federal"     2 "State"           3 "Municipal" 4 "Private"
+	label define location  1 "Urban"       0 "Rural"
+	label val    location  location
+	label val    operation operation
+	label val    network   network
+	label val	 coduf 	   state		
+
+order year codschool coduf uf codmunic codmunic2 operation network location cfim_letivo cinicio_letivo mes_fim_letivo
+sort  codschool year
+compress
+save "$output_census/School Infrastructure at school level.dta", replace
+
+
+
