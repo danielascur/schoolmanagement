@@ -43,7 +43,7 @@ save "cleaning/tempdata/MgmtIndex_ProvaBrasil_SchlGradeYear_temp", replace
 
 foreach schltype in Munic NonMunic {
 
-	use "input/Akhtari et al. (2022)/Data and Code/Data/Main Data/s_MainData_SchlLevel2007_2013_`schltype'Schools", clear
+	use "input/Akhtari et al. (2022)/s_MainData_SchlLevel2007_2013_`schltype'Schools", clear
 
 	expand 2, generate(grade)
 	replace grade = 5 if grade == 0
@@ -107,7 +107,7 @@ save "cleaning/tempdata/MgmtIndex_ProvaBrasil_SchlGradeYear_temp", replace
 ***** Main data set: Restricted to schools in the two data sets
 
 foreach schltype in Munic NonMunic {
-	use "input/Akhtari et al. (2022)/Data and Code/Data/Main Data/s_MainData_StdtLevel2007_2013_`schltype'Schools", clear
+	use "input/Akhtari et al. (2022)/s_MainData_StdtLevel2007_2013_`schltype'Schools", clear
 
 	// Even though this data set is at the student level, there is no variable indicating whether the student is in 4th or 8th grade
 	// We use the variables both_score_indiv_`grade'_stdComb, since they are used in the regressions below
@@ -145,7 +145,7 @@ foreach schltype in Munic NonMunic {
 foreach schltype in Munic NonMunic {
 	use "analysis/data/PoliticalTurnover_StdtLevel2007_2013_`schltype'Schools", clear
 
-	merge m:1 PK_COD_ENTIDADE year using "input/Akhtari et al. (2022)/Data and Code/Data/Main Data/s_MainData_SchlLevel2007_2013_`schltype'Schools", keepusing(expthisschl_lessthan2_DPB)
+	merge m:1 PK_COD_ENTIDADE year using "input/Akhtari et al. (2022)/s_MainData_SchlLevel2007_2013_`schltype'Schools", keepusing(expthisschl_lessthan2_DPB)
 	drop if _merge == 2
 	drop _merge
 
@@ -158,13 +158,12 @@ foreach schltype in Munic NonMunic {
 
 	use "analysis/data/PoliticalTurnover_StdtLevel2007_2013_`schltype'Schools", clear
 
-	merge m:1 PK_COD_ENTIDADE year using "input/Akhtari et al. (2022)/Data and Code/Data/Main Data/s_MainData_SchlLevel2007_2013_`schltype'Schools", keepusing(newtchr)
+	merge m:1 PK_COD_ENTIDADE year using "input/Akhtari et al. (2022)/s_MainData_SchlLevel2007_2013_`schltype'Schools", keepusing(newtchr)
 	drop if _merge == 2
 	drop _merge
 
 	save "analysis/data/PoliticalTurnover_StdtLevel2007_2013_`schltype'Schools", replace
 }
-
 
 
 

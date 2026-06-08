@@ -5,15 +5,24 @@
 global input_census  "input/Censo Escolar"
 global output_census "cleaning/tempdata"
 
-* Converting raw files (.txt) to .dta
-do "cleaning/aux_pb1_build_census_teachers.do"
-do "cleaning/aux_pb2_build_census_schools.do"
-do "cleaning/aux_pb3_build_census_classes.do"
+* Stage anonymized Censo Escolar inputs.
+forvalues year = 2007/2017 {
+	use "$input_census/Escolas`year'.dta", clear
+	save "$output_census/Escolas`year'.dta", replace
+
+	use "$input_census/Turmas`year'.dta", clear
+	save "$output_census/Turmas`year'.dta", replace
+}
+
+foreach year in 2007 2009 2010 2011 2012 2013 2014 2015 2016 2017 {
+	use "$input_census/Professores`year'.dta", clear
+	save "$output_census/Professores`year'.dta", replace
+}
 
 * Cleaning Teachers, Schools and Classes datasets
-do "cleaning/aux_pb4_clean_census_teachers.do"
-do "cleaning/aux_pb5_clean_census_schools.do"
-do "cleaning/aux_pb6_clean_census_classes.do"
+do "cleaning/aux_pb1_clean_census_teachers.do"
+do "cleaning/aux_pb2_clean_census_schools.do"
+do "cleaning/aux_pb3_clean_census_classes.do"
 
 
 
@@ -23,10 +32,13 @@ do "cleaning/aux_pb6_clean_census_classes.do"
 global input_pb  "input/PB"
 global output_pb "cleaning/tempdata"
 
-do "cleaning/aux_pb7_build_school.do"
-do "cleaning/aux_pb8_build_student.do"
-do "cleaning/aux_pb9_build_teacher.do"
-do "cleaning/aux_pb10_build_principal.do"
+foreach dataset in Teachers Principals Schools Students {
+	use "$input_pb/`dataset'.dta", clear
+	save "$output_pb/`dataset'.dta", replace
+}
+
+global infra_names "infra_predio_telhado infra_predio_paredes infra_predio_piso infra_predio_portas infra_predio_janelas infra_predio_banheiros infra_predio_cozinha infra_predio_hidraulica infra_predio_eletrica"
+do "cleaning/aux_pb4_clean_school.do"
 
 
 
@@ -544,7 +556,7 @@ generate in_wms = 1
 save "cleaning/tempdata/schools_wms", replace
 
 ***** Dataset to merge: Municipality school spending from Akhtari et al. (2022)
-use "input/Akhtari et al. (2022)/Data and Code/Data/Main Data/s_spending_2009_2015_empenhada.dta", clear
+use "input/Akhtari et al. (2022)/s_spending_2009_2015_empenhada.dta", clear
 rename COD_MUNICIPIO codmunic
 save "cleaning/tempdata/s_spending_2009_2015_empenhada", replace
 
@@ -632,7 +644,6 @@ label var performance_basic 	"Performance: basic"
 label var performance_adequ 	"Performance: adequate"
 label var like_port 		"Students like portuguese"
 label var like_math 		"Students like math"
-label var school		"School name"
 label var codmunic 		"Municipality ID (7-digit)"
 label var codmunic2 		"Municipality ID (6-digit)"
 label var teacher_male 		"Share of male teachers"

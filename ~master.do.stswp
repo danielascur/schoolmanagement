@@ -120,7 +120,7 @@ global region "fcolor(white) lcolor(white) ifcolor(white) ilcolor(white)"
 
 	display "End of PISA 2012"
 
-*do "cleaning/2_pisa2022_cleaning.do" 
+do "cleaning/2_pisa2022_cleaning.do" 
 
 	display "End of PISA 2022"	
 	
