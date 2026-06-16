@@ -133,6 +133,8 @@ do "cleaning/4_pol_turnover_cleaning.do"
 	display "End of Political turnover"
 
 
+/*	
+	
 // Analysis
 do "analysis/table_1.do"
 do "analysis/table_2.do"

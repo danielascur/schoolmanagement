@@ -146,7 +146,7 @@ end
 *--------------------------------------------------------------------------------------------------------------------------------*
 	foreach year in 2007 2009 2010 2011 2012 2013  {
 		foreach region in RO AC AM RR PA AP TO MA PI CE RN PB PE AL SE BA MG ES RJ SP PR SC RS MS MT GO DF{
-			use "$output_census/Professores`year'`region'.dta", clear
+			use "$input_census/Professores`year'`region'.dta", clear
 			Professores, ano(`year') divisao(`region')
 		}
 	}
@@ -154,7 +154,7 @@ end
 
 	foreach year in 2014 2015 2016 2017 { 
 		foreach region in CO NORDESTE NORTE SUDESTE SUL {
-			use "$output_census/Professores`year'`region'.dta", clear
+			use "$input_census/Professores`year'`region'.dta", clear
 			Professores, ano(`year') divisao(`region')		
 		}
 	}

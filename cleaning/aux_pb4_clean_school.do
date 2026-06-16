@@ -3,7 +3,7 @@
 *1* Creating infrastructure index
 ***		
 * Loading the combined file
-use "$output_pb/Schools.dta", clear
+use "$input_pb/Schools.dta", clear
 
 * Looping through each variable to create a numeric version
 foreach var of global infra_names {

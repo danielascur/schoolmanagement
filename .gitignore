@@ -1,17 +1,17 @@
 # R files
-.Rproj.user
-.Rhistory
-.RData
-.Ruserdata
+*.Rproj.user
+*.Rhistory
+*.RData
+*.Ruserdata
 
 # Stata files
-.dta
-.do.stswp
+*.dta
+*.do.stswp
 
 # General data files
-.csv
-.xlsx
-.xls
+*.csv
+*.xlsx
+*.xls
 
 # folders
 analysis/data/

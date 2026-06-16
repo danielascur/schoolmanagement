@@ -1,217 +1,10 @@
-
-*1*IMPORTING PROVA BRASIL MICRODATA AT TEACHER LEVEL*
 ***
-	
-	*------------------------------------------------------------------------------------------------------------------------*
-	*2007*
-	*------------------------------------------------------------------------------------------------------------------------*
-	*------------------------------------------------------------------------------------------------------------------------*
-		clear
-		#delimit;
-			infix
-				str PK_COD_ENTIDADE 	   1-8
-				str ID_DEPENDENCIA_ADM 	   9-9
-				str ID_LOCALIZACAO 		   10-10
-				str SIGLA_UF 			   11-12
-				str COD_UF 				   13-14
-				str NO_MUNICIPIO 		   15-64
-				str COD_MUNICIPIO 		   65-71
-				str ID_TURMA 			   72-78
-				str ID_SERIE 			   79-79
-				str DS_DISCIPLINA 		   80-80
-				str Q1  81-81
-				str Q2  82-82
-				str Q3  83-83
-				str Q4  84-84
-				str Q5  85-85
-				str Q6  86-86
-				str Q7  87-87
-				str Q8  88-88
-				str Q9  89-89
-				str Q10 90-90
-				str Q11 91-91
-				str Q12 92-92
-				str Q13 93-93
-				str Q14 94-94
-				str Q15 95-95
-				str Q16 96-96
-				str Q17 97-97
-				str Q18 98-98
-				str Q19 99-99
-				str Q20 100-100
-				str Q21 101-101
-				str Q22 102-102
-				str Q23 103-103
-				str Q24 104-104
-				str Q25 105-105
-				str Q26 106-106
-				str Q27 107-107
-				str Q28 108-108
-				str Q29 109-109
-				str Q30 110-110
-				str Q31 111-111
-				str Q32 112-112
-				str Q33 113-113
-				str Q34 114-114
-				str Q35 115-115
-				str Q36 116-116
-				str Q37 117-117
-				str Q38 118-118
-				str Q39 119-119
-				str Q40 120-120
-				str Q41 121-121
-				str Q42 122-122
-				str Q43 123-123
-				str Q44 124-124
-				str Q45 125-125
-				str Q46 126-126
-				str Q47 127-127
-				str Q48 128-128
-				str Q49 129-129
-				str Q50 130-130
-				str Q51 131-131
-				str Q52 132-132
-				str Q53 133-133
-				str Q54 134-134
-				str Q55 135-135
-				str Q56 136-136
-				str Q57 137-137
-				str Q58 138-138
-				str Q59 139-139
-				str Q60 140-140
-				str Q61 141-141
-				str Q62 142-142
-				str Q63 143-143
-				str Q64 144-144
-				str Q65 145-145
-				str Q66 146-146
-				str Q67 147-147
-				str Q68 148-148
-				str Q69 149-149
-				str Q70 150-150
-				str Q71 151-151
-				str Q72 152-152
-				str Q73 153-153
-				str Q74 154-154
-				str Q75 155-155
-				str Q76 156-156
-				str Q77 157-157
-				str Q78 158-158
-				str Q79 159-159
-				str Q80 160-160
-				str Q81 161-161
-				str Q82 162-162
-				str Q83 163-163
-				str Q84 164-164
-				str Q85 165-165
-				str Q86 166-166
-				str Q87 167-167
-				str Q88 168-168
-				str Q89 169-169
-				str Q90 170-170
-				str Q91 171-171
-				str Q92 172-172
-				str Q93 173-173
-				str Q94 174-174
-				str Q95 175-175
-				str Q96 176-176
-				str Q97 177-177
-				str Q98 178-178
-				str Q99 179-179
-				str Q100 180-180
-				str Q101 181-181
-				str Q102 182-182
-				str Q103 183-183
-				str Q104 184-184
-				str Q105 185-185
-				str Q106 186-186
-				str Q107 187-187
-				str Q108 188-188
-				str Q109 189-189
-				str Q110 190-190
-				str Q111 191-191
-				str Q112 192-192
-				str Q113 193-193
-				str Q114 194-194
-				str Q115 195-195
-				str Q116 196-196
-				str Q117 197-197
-				str Q118 198-198
-				str Q119 199-199
-				str Q120 200-200
-				str Q121 201-201
-				str Q122 202-202
-				str Q123 203-203
-				str Q124 204-204
-				str Q125 205-205
-				str Q126 206-206
-				str Q127 207-207
-				str Q128 208-208
-				str Q129 209-209
-				str Q130 210-210
-				str Q131 211-211
-			using "$input_pb/2007/DADOS/TS_QUEST_PROFESSOR.TXT";
-			save  "$output_pb/Teachers_2007.dta", replace;
-			*clear;	
-		#delimit cr	
-
-		
-	*------------------------------------------------------------------------------------------------------------------------*
-	*2009*
-	*------------------------------------------------------------------------------------------------------------------------*
-	*------------------------------------------------------------------------------------------------------------------------*
-		clear
-		insheet using "$input_pb/2009/DADOS/TS_QUEST_PROFESSOR.txt", names delimiter(";")
-			forvalues i = 1/135 {
-				gen Q`i' = substr(tx_resp_questionario,`i',1)
-			}
-			drop tx_resp_questionario
-			save  "$output_pb/Teachers_2009.dta", replace
-			
-			
-	*------------------------------------------------------------------------------------------------------------------------*
-	*2011*
-	*------------------------------------------------------------------------------------------------------------------------*
-	*------------------------------------------------------------------------------------------------------------------------*
-		import delimited "$input_pb/2011/DADOS/TS_QUEST_PROFESSOR.csv", delimiter(";") clear 
-			forvalues i = 1/9 {
-				rename tx_resp_q00`i'  Q`i'
-			}
-			forvalues i = 10/99 {
-				rename tx_resp_q0`i'   Q`i'
-			}
-			forvalues i = 100/152 {
-				rename tx_resp_q`i'    Q`i'
-			}			
-			save  "$output_pb/Teachers_2011.dta", replace
-
-						
-	*------------------------------------------------------------------------------------------------------------------------*
-	*2013, 2015, 2017*
-	*------------------------------------------------------------------------------------------------------------------------*
-	*------------------------------------------------------------------------------------------------------------------------*
-		foreach year in 2013 2015 2017 {
-			import delimited "$input_pb/`year'/DADOS/TS_PROFESSOR.csv", delimiter(",") clear 
-				forvalues i = 1/9 {
-					rename tx_resp_q00`i'  Q`i'
-				}
-				forvalues i = 10/99 {
-					rename tx_resp_q0`i'   Q`i'
-				}
-				forvalues i = 100/125 {
-					rename tx_resp_q`i'    Q`i'
-				}		
-			save  "$output_pb/Teachers_`year'.dta", replace
-		}
-		
-		
-***
-*2*HARMONIZING PROVA BRASIL
+* HARMONIZING PROVA BRASIL
 ***	
 
 	*------------------------------------------------------------------------------------------------------------------------*
 		forvalues year = 2007(2)2017 {
-			use "$output_pb/Teachers_`year'.dta", clear
+			use "$input_pb/Teachers_`year'.dta", clear
 			
 				if `year' == 2007 {
 					gen 	 year = 2007
@@ -250,7 +43,7 @@
 				tempfile `year'
 				save 	``year''
 				compress
-				erase "$output_pb/Teachers_`year'.dta"
+				*erase "$output_pb/Teachers_`year'.dta"
 		}
 		clear 		
 		forvalues year = 2007(2)2017 {
@@ -539,87 +332,87 @@
 		
 		*Labels
 		*--------------------------------------------------------------------------------------------------------------------*
-		label variable principal_effort_teacher			"Principal's effort from teacher's perspective"
-		label variable teacher_effort_index 			"Teacher's effort based on the use of news and literature books" 	
-		label variable parents_effort_index 			"1 if parents support children (from teacher's perspective) and 0, otherwise"
-		label variable student_effort_teacher				"Student's effort from teacher's perspective"
-		label variable violence_index					"Index for the violence the teacher faces in the school"
-		label variable almost_all_finish_grade9			"1:teacher expects that almost all students will finish 9th grade and 0, otherwise"
-		label variable almost_all_finish_highschool		"1:teacher expects that almost all students will finish high school and 0, otherwise"
-		label variable almost_all_get_college 			"1:teacher expects that almost all students will get to college and 0, otherwise"
-		label variable teacher_college_degree		    "1 if teacher finished the undergraduate and 0, otherwise"
-		label variable teacher_male						"1 for teacher_males and 0, otherwise"
-		label variable teacher_white					"1 if teacher is teacher_white and 0, otherwise" 
-		label variable teacher_age_range				"Teacher's age range"
-		label variable teacher_years_graduation			"Years since graduation"
-		label variable type_university					"1: Federal. 2: State. 3: Municipal. 4: Private"
-		label variable type_education					"1: Face to face. 2: Face to face/distance. 3: Distance learning"
-		label variable def_schoolinfra					"Deficit in student learning is due to: poor school infra/pedagogic"
-		label variable def_curricula					"Deficit in student learning is due to: no adequate curricula"
-		label variable def_cover_curricula				"Deficit in student learning is due to: not covering the curricula"
-		label variable def_2muchwork					"Deficit in student learning is due to: teachers don't have time to plan"
-		label variable def_teacher_insatisfaction		"Deficit in student learning is due to: teachers insatisfaction with teacher_wages"
-		label variable def_student_socioback			"Deficit in student learning is due to: socioeconomic background"
-		label variable def_parents_culturalback			"Deficit in student learning is due to: cultural background of the parents"
-		label variable def_noparents_support			"Deficit in student learning is due to: no parents support"
-		label variable def_low_selfesteem				"Deficit in student learning is due to: student's low self esteem"
-		label variable def_student_loweffort			"Deficit in student learning is due to:	student's low effort"
-		label variable def_bad_behavior					"Deficit in student learning is due to: student's bad behavior"
-		label variable def_absenteeism					"Deficit in student learning is due to: student missing the classes"
-		label variable violence_lifethreat  			"1 if you have ever had your life threatened in this school and 0, otherwise"
-		label variable violence_student_threat  		"1 if you already had a student threatening your life in school and 0, otherwise" 
-		label variable violence_theft  					"1 if you were already victim of theft in school? (no violence) and 0, otherwise"
-		label variable violence_robb  					"1 if you were already victim of theft in school? (with iolence) and 0, otherwise"
-		label variable violence_students_alcohol  		"1 if you already had a student in class under infl. alcohol and 0, othewise"
-		label variable violence_students_drugs  		"1 if you already had a student in class under infl. drugs and 0, othewise"
-		label variable violence_students_knife  		"1 if you already had a student in class with a knife and 0, othewise"
-		label variable violence_students_gun 			"1 if you already had a student in class with a gun and 0, othewise"
-		label variable expec_finish_grade9  			"How many students do you think will finish the 9th grade?"
-		label variable expec_finish_grade12 			"How many students do you think will finish the high school?"
-		label variable expec_get_college 				"How many students do you think will get to college?"
-		label variable teacher_edu 						"Teacher's education"
-		label variable postgrad  						"Teacher's graduate certificate"
-		label variable experience_asteacher 			"Teacher's experience (overall)"
-		label variable teacher_exp_school				"Teacher's experience (in school)"
-		label variable teacher_exp_grade 				"Teacher's experience (in the grade he/she is currently teaching)"
-		label variable teacher_work_contract 			"Teacher's contract type"
-		label variable use_news 						"Teacher uses news/magazines as pedag. material"
-		label variable use_copy_machine 				"Teacher uses copy machines as pedag. material"
-		label variable use_literature_books 			"Teacher uses literature books as pedag. material"
-		label variable meetings_class_council  			"Number of class council meetings"
-		label variable pedagogic_plan 					"Development of the pedagogical plan"
-		label variable coduf 							"State ID"
-		label variable codmunic 						"Municipality ID"
-		label variable codschool 						"School ID"
-		label variable network 							"School administrative network"
-		label variable grade 							"Grade teacher is in charge of"
-		label variable year 							"Year"
-		label variable urban							"1: Urban area. 0: Rural area"
-		label variable valid_questionnaire				"1 for valid questionnaire and 0, otherwise"
-		label variable id_teacher 						"Teacher ID"
-		label variable id_class							"Code of the class teacher is in charge of"
-		label variable teacher_gender					"Teacher's gender"
-		label variable teacher_skincolor   				"Teacher's skin color"
-		label variable principal_learning 				"Frequency that the principal: pays attention to students' learning"
-		label variable principal_norms 					"Frequency that the principal: pays attention to administrative norms"
-		label variable principal_maintenance 			"Frequency that the principal: pays attention to school maintenance"
-		label variable principal_motivation 			"Frequency that the principal: motivates me"
-		label variable principal_innovation 			"Frequency that the principal: encourages innovative activities"
-		label variable principal_respect 				"Frequency that the principal: makes me feel respected"
-		label variable principal_trust 					"Frequency that: I trust the principal as a professional"
-		label variable work_decisions 					"Frequency that I participate in decisions related with my work"
-		label variable my_ideas 						"Frequency that the teacher team takes my ideas into consideration"
-		label variable area_postgrad 					"Area of Graduate School"
-		label variable teacher_other_job 				"Do you have another job?"
-		label variable teacher_wage 					"Gross teacher_wage as teacher (in all schools that teacher works)"
-		label variable teacher_workhours_school 		"Weekly hours of work in this school"
-		label variable nu_schools_work 					"Number of school the teacher works"
-		label variable teacher_workhours_total 			"Weekly hours of work as teacher in all schools"
-		label variable share_curricula 					"Amount of the school curricula teacher was able to cover"	
-		label variable students_books 					"Students with textbooks" 
-		label variable books_since_beg_year				"Did the students receive the book in the beggining of the school year?"
-		label variable received_book 					"Did the school receive the textbooks?"
-		label variable quality_books					"What is the quality of the book received"
+		label variable principal_effort_teacher		"Principal's effort from teacher's perspective"
+		label variable teacher_effort_index 		"Teacher's effort based on the use of news and literature books" 	
+		label variable parents_effort_index 		"1 if parents support children (from teacher's perspective) and 0, otherwise"
+		label variable student_effort_teacher		"Student's effort from teacher's perspective"
+		label variable violence_index			"Index for the violence the teacher faces in the school"
+		label variable almost_all_finish_grade9		"1:teacher expects that almost all students will finish 9th grade and 0, otherwise"
+		label variable almost_all_finish_highschool	"1:teacher expects that almost all students will finish high school and 0, otherwise"
+		label variable almost_all_get_college 		"1:teacher expects that almost all students will get to college and 0, otherwise"
+		label variable teacher_college_degree		"1 if teacher finished the undergraduate and 0, otherwise"
+		label variable teacher_male			"1 for teacher_males and 0, otherwise"
+		label variable teacher_white			"1 if teacher is teacher_white and 0, otherwise" 
+		label variable teacher_age_range		"Teacher's age range"
+		label variable teacher_years_graduation		"Years since graduation"
+		label variable type_university			"1: Federal. 2: State. 3: Municipal. 4: Private"
+		label variable type_education			"1: Face to face. 2: Face to face/distance. 3: Distance learning"
+		label variable def_schoolinfra			"Deficit in student learning is due to: poor school infra/pedagogic"
+		label variable def_curricula			"Deficit in student learning is due to: no adequate curricula"
+		label variable def_cover_curricula		"Deficit in student learning is due to: not covering the curricula"
+		label variable def_2muchwork			"Deficit in student learning is due to: teachers don't have time to plan"
+		label variable def_teacher_insatisfaction	"Deficit in student learning is due to: teachers insatisfaction with teacher_wages"
+		label variable def_student_socioback		"Deficit in student learning is due to: socioeconomic background"
+		label variable def_parents_culturalback		"Deficit in student learning is due to: cultural background of the parents"
+		label variable def_noparents_support		"Deficit in student learning is due to: no parents support"
+		label variable def_low_selfesteem		"Deficit in student learning is due to: student's low self esteem"
+		label variable def_student_loweffort		"Deficit in student learning is due to:	student's low effort"
+		label variable def_bad_behavior			"Deficit in student learning is due to: student's bad behavior"
+		label variable def_absenteeism			"Deficit in student learning is due to: student missing the classes"
+		label variable violence_lifethreat  		"1 if you have ever had your life threatened in this school and 0, otherwise"
+		label variable violence_student_threat  	"1 if you already had a student threatening your life in school and 0, otherwise" 
+		label variable violence_theft  			"1 if you were already victim of theft in school? (no violence) and 0, otherwise"
+		label variable violence_robb  			"1 if you were already victim of theft in school? (with iolence) and 0, otherwise"
+		label variable violence_students_alcohol  	"1 if you already had a student in class under infl. alcohol and 0, othewise"
+		label variable violence_students_drugs  	"1 if you already had a student in class under infl. drugs and 0, othewise"
+		label variable violence_students_knife  	"1 if you already had a student in class with a knife and 0, othewise"
+		label variable violence_students_gun 		"1 if you already had a student in class with a gun and 0, othewise"
+		label variable expec_finish_grade9  		"How many students do you think will finish the 9th grade?"
+		label variable expec_finish_grade12 		"How many students do you think will finish the high school?"
+		label variable expec_get_college 		"How many students do you think will get to college?"
+		label variable teacher_edu 			"Teacher's education"
+		label variable postgrad  			"Teacher's graduate certificate"
+		label variable experience_asteacher 		"Teacher's experience (overall)"
+		label variable teacher_exp_school		"Teacher's experience (in school)"
+		label variable teacher_exp_grade 		"Teacher's experience (in the grade he/she is currently teaching)"
+		label variable teacher_work_contract 		"Teacher's contract type"
+		label variable use_news 			"Teacher uses news/magazines as pedag. material"
+		label variable use_copy_machine 		"Teacher uses copy machines as pedag. material"
+		label variable use_literature_books 		"Teacher uses literature books as pedag. material"
+		label variable meetings_class_council  		"Number of class council meetings"
+		label variable pedagogic_plan 			"Development of the pedagogical plan"
+		label variable coduf 				"State ID"
+		label variable codmunic 			"Municipality ID"
+		label variable codschool 			"School ID"
+		label variable network 				"School administrative network"
+		label variable grade 				"Grade teacher is in charge of"
+		label variable year 				"Year"
+		label variable urban				"1: Urban area. 0: Rural area"
+		label variable valid_questionnaire		"1 for valid questionnaire and 0, otherwise"
+		label variable id_teacher 			"Teacher ID"
+		label variable id_class				"Code of the class teacher is in charge of"
+		label variable teacher_gender			"Teacher's gender"
+		label variable teacher_skincolor   		"Teacher's skin color"
+		label variable principal_learning 		"Frequency that the principal: pays attention to students' learning"
+		label variable principal_norms 			"Frequency that the principal: pays attention to administrative norms"
+		label variable principal_maintenance 		"Frequency that the principal: pays attention to school maintenance"
+		label variable principal_motivation 		"Frequency that the principal: motivates me"
+		label variable principal_innovation 		"Frequency that the principal: encourages innovative activities"
+		label variable principal_respect 		"Frequency that the principal: makes me feel respected"
+		label variable principal_trust 			"Frequency that: I trust the principal as a professional"
+		label variable work_decisions 			"Frequency that I participate in decisions related with my work"
+		label variable my_ideas 			"Frequency that the teacher team takes my ideas into consideration"
+		label variable area_postgrad 			"Area of Graduate School"
+		label variable teacher_other_job 		"Do you have another job?"
+		label variable teacher_wage 			"Gross teacher_wage as teacher (in all schools that teacher works)"
+		label variable teacher_workhours_school 	"Weekly hours of work in this school"
+		label variable nu_schools_work 			"Number of school the teacher works"
+		label variable teacher_workhours_total 		"Weekly hours of work as teacher in all schools"
+		label variable share_curricula 			"Amount of the school curricula teacher was able to cover"	
+		label variable students_books 			"Students with textbooks" 
+		label variable books_since_beg_year		"Did the students receive the book in the beggining of the school year?"
+		label variable received_book 			"Did the school receive the textbooks?"
+		label variable quality_books			"What is the quality of the book received"
 		compress
 		save "$output_pb/Teachers.dta", replace
 		

@@ -5,20 +5,6 @@
 global input_census  "input/Censo Escolar"
 global output_census "cleaning/tempdata"
 
-* Stage anonymized Censo Escolar inputs.
-forvalues year = 2007/2017 {
-	use "$input_census/Escolas`year'.dta", clear
-	save "$output_census/Escolas`year'.dta", replace
-
-	use "$input_census/Turmas`year'.dta", clear
-	save "$output_census/Turmas`year'.dta", replace
-}
-
-foreach year in 2007 2009 2010 2011 2012 2013 2014 2015 2016 2017 {
-	use "$input_census/Professores`year'.dta", clear
-	save "$output_census/Professores`year'.dta", replace
-}
-
 * Cleaning Teachers, Schools and Classes datasets
 do "cleaning/aux_pb1_clean_census_teachers.do"
 do "cleaning/aux_pb2_clean_census_schools.do"
@@ -32,13 +18,10 @@ do "cleaning/aux_pb3_clean_census_classes.do"
 global input_pb  "input/PB"
 global output_pb "cleaning/tempdata"
 
-foreach dataset in Teachers Principals Schools Students {
-	use "$input_pb/`dataset'.dta", clear
-	save "$output_pb/`dataset'.dta", replace
-}
-
-global infra_names "infra_predio_telhado infra_predio_paredes infra_predio_piso infra_predio_portas infra_predio_janelas infra_predio_banheiros infra_predio_cozinha infra_predio_hidraulica infra_predio_eletrica"
 do "cleaning/aux_pb4_clean_school.do"
+do "cleaning/aux_pb5_clean_student.do"
+do "cleaning/aux_pb6_clean_teacher.do"
+do "cleaning/aux_pb7_clean_principal.do"
 
 
 

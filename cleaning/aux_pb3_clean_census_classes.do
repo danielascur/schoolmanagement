@@ -15,7 +15,7 @@ forvalues k = 2007/2017 {
 
 	global turmas T EI creche pre EF1 EF2 EF 5grade 9grade EM EMTotal 
 
-	use "$output_census/Turmas`k'.dta", clear
+	use "$input_census/Turmas`k'.dta", clear
 
 	if `k' <= 2014 {
 		keep    ANO_CENSO	PK_COD_TURMA	NO_TURMA	HR_INICIAL	HR_INICIAL_MINUTO	NU_DURACAO_TURMA	NUM_MATRICULAS	FK_COD_MOD_ENSINO	FK_COD_ETAPA_ENSINO	PK_COD_ENTIDADE	FK_COD_ESTADO	FK_COD_MUNICIPIO	ID_LOCALIZACAO	ID_DEPENDENCIA_ADM 
