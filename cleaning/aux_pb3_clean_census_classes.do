@@ -36,7 +36,7 @@ forvalues k = 2007/2017 {
 		replace FK_COD_MOD_ENSINO = 3 if IN_EJA                == 1
 		replace FK_COD_MOD_ENSINO = 4 if IN_PROFISSIONALIZANTE == 1
 		drop IN_REGULAR IN_ESPECIAL_EXCLUSIVA IN_EJA
-		order 								        (year	codclass	class begins	beginsminute	last	enrollments FK_COD_MOD_ENSINO   FK_COD_ETAPA_ENSINO	codschool	coduf	codmunic	location	network)
+		order year codclass class begins beginsminute last enrollments FK_COD_MOD_ENSINO FK_COD_ETAPA_ENSINO codschool coduf codmunic location network
 	}
 	
 		gen tclassEI        = 1 if  FK_COD_ETAPA_ENSINO == 1 | FK_COD_ETAPA_ENSINO == 2 | FK_COD_ETAPA_ENSINO == 3

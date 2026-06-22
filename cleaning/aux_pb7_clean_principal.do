@@ -2,6 +2,7 @@
 *HARMONIZING PROVA BRASIL
 ***	
 
+
 	*------------------------------------------------------------------------------------------------------------------------*
 		forvalues year = 2007(2)2017 {
 			use "$input_pb/Principals_`year'.dta", clear
@@ -9,7 +10,8 @@
 				if `year' == 2007 {
 					gen 	 year = 2007
 					drop 	 NO_MUNICIPIO SIGLA_UF 
-					rename  (PK_COD_ENTIDADE-COD_MUNICIPIO) (codschool network location coduf codmunic)
+					rename  (PK_COD_ENTIDADE ID_DEPENDENCIA_ADM ID_LOCALIZACAO COD_UF COD_MUNICIPIO) ///
+							(codschool network location coduf codmunic)
 					rename  (Q1 Q2 Q3 Q4 Q5 Q6 Q8 Q9 Q10 Q14 Q16 Q15 Q20 Q21 Q18 Q19 Q17 Q11 Q22 Q23 Q35 Q24 Q25 Q26 Q27 Q28 Q29 Q30 Q31 Q32 Q33 Q34 Q36 Q37 Q43 Q38 Q39 Q40 Q41 Q42 Q44 Q45 Q46 Q47 Q48 Q49 Q50 Q51 Q52 Q53 Q54 Q55 Q56 Q57 Q91 Q92 Q93 Q94 Q95 Q96 Q98 Q143 Q146 Q155 Q158 ) ///					(principal_gender principal_age_range principal_skincolor principal_edu_level principal_years_graduation type_university type_education postgrad area_postgrad principal_wage principal_other_job total_principal_wage principal_workhours_school principal_selection_work experience_asprincipal_total experience_asprincipal_school principal_exp_eductraining_last2years org_training teachers_training teachers_tenure meetings_school_council school_council_teachers school_council_students school_council_staff school_council_parents meetings_class_council pedagogic_plan students_admission school_offering criteria_classrooms criteria_teacher_classrooms prog_reduce_dropout prog_reduce_repetition prog_increase_learning absenteeism_talk_students absenteeism_talk_parents absenteeism_parents_meeting absenteeism_parents_inperson absenteeism_send_someone lack_finantial_resources lack_teachers lack_adm_staff lack_pedago_staff lack_pedago_resources interruption_school absenteeism_teachers absenteeism_students teachers_turnover student_bad_behavior interference_external_agents support_secretary_edu exchange_information support_community finantial_resourses_federal finantial_resourses_state finantial_resources_municipal books_since_beg_year lack_books books_received violence_students_teachers violence_between_students violence_lifethreat violence_student_threat violence_theft violence_robb violence_students_alcohol violence_students_drugs violence_students_knife violence_students_gun )
 							(principal_gender principal_age_range principal_skincolor principal_edu_level principal_years_graduation type_university type_education postgrad area_postgrad principal_wage principal_other_job total_principal_wage principal_workhours_school principal_selection_work experience_asprincipal_total experience_asprincipal_school principal_exp_educ training_last2years org_training teachers_training teachers_tenure meetings_school_council school_council_teachers school_council_students school_council_staff school_council_parents meetings_class_council pedagogic_plan students_admission school_offering criteria_classrooms criteria_teacher_classrooms prog_reduce_dropout prog_reduce_repetition prog_increase_learning absenteeism_talk_students absenteeism_talk_parents absenteeism_parents_meeting absenteeism_parents_inperson absenteeism_send_someone lack_finantial_resources lack_teachers lack_adm_staff lack_pedago_staff lack_pedago_resources interruption_school absenteeism_teachers absenteeism_students teachers_turnover student_bad_behavior interference_external_agents support_secretary_edu exchange_information support_community finantial_resourses_federal finantial_resourses_state finantial_resources_municipal book_choice books_since_beg_year lack_books books_received agressao_prof1 agressao_prof2 agressao_func1 agressao_func2 )
 				}
@@ -17,14 +19,17 @@
 				if `year' == 2009 {
 					drop 	 no_municipio sigla_uf
 					gen 	 year = 2009
-					rename  (pk_cod_entidade-cod_municipio)(codschool network location coduf codmunic)
+					rename  (pk_cod_entidade id_dependencia_adm id_localizacao cod_uf cod_municipio) ///
+							(codschool network location coduf codmunic)
 					rename  (Q1 Q2 Q3 Q4 Q5 Q6 Q8 Q9 Q10 Q14 Q16 Q15 Q20 Q21 Q18 Q19 Q17 Q11 Q22 Q23 Q35 Q24 Q25 Q26 Q27 Q28 Q29 Q30 Q31 Q32 Q33 Q34 Q36 Q37 Q43 Q38 Q39 Q40 Q41 Q42 Q46 Q47 Q48 Q49 Q50 Q51 Q52 Q53 Q54 Q55 Q56 Q57 Q58 Q59 Q94 Q95 Q96 Q97 Q98 Q99 Q101 Q127 Q130 Q139 Q142 ) ///					
 							(principal_gender principal_age_range principal_skincolor principal_edu_level principal_years_graduation type_university type_education postgrad area_postgrad principal_wage principal_other_job total_principal_wage principal_workhours_school principal_selection_work experience_asprincipal_total experience_asprincipal_school principal_exp_educ training_last2years org_training teachers_training teachers_tenure meetings_school_council school_council_teachers school_council_students school_council_staff school_council_parents meetings_class_council pedagogic_plan students_admission school_offering criteria_classrooms criteria_teacher_classrooms prog_reduce_dropout prog_reduce_repetition prog_increase_learning absenteeism_talk_students absenteeism_talk_parents absenteeism_parents_meeting absenteeism_parents_inperson absenteeism_send_someone lack_finantial_resources lack_teachers lack_adm_staff lack_pedago_staff lack_pedago_resources interruption_school absenteeism_teachers absenteeism_students teachers_turnover student_bad_behavior interference_external_agents support_secretary_edu exchange_information support_community finantial_resourses_federal finantial_resourses_state finantial_resources_municipal book_choice books_since_beg_year lack_books books_received agressao_prof1 agressao_prof2 agressao_func1 agressao_func2 )					
 					}
 				
-				if `year' == 2011 rename (id_prova_brasil-in_preenchimento) (year coduf codmunic codschool network location valid_questionnaire)
+				if `year' == 2011 					rename (id_prova_brasil id_uf id_municipio id_escola id_dependencia_adm id_localizacao in_preenchimento) ///
+														   (year coduf codmunic codschool network location valid_questionnaire)
 				
-				if `year' >  2011 rename (id_prova_brasil-in_preenchimento_questionario) (year coduf codmunic codschool network location valid_questionnaire)
+				if `year' >	 2011					rename (id_prova_brasil id_uf id_municipio id_escola id_dependencia_adm id_localizacao in_preenchimento_questionario) ///
+														   (year coduf codmunic codschool network location valid_questionnaire)
 				
 				if `year' == 2011 {
 					rename  (Q1 Q2 Q3 Q4 Q5 Q6 Q8 Q9 Q10 Q14 Q16 Q15 Q20 Q21 Q18 Q19 Q17 Q11 Q22 Q23 Q35 Q24 Q25 Q26 Q27 Q28 Q29 Q30 Q31 Q32 Q33 Q34 Q36 Q37 Q43 Q38 Q39 Q40 Q41 Q42 Q46 Q47 Q48 Q55 Q56 Q57 Q58 Q59 Q60 Q61 Q62 Q63 Q64 Q65 Q66 Q67 Q68 Q125 Q126 Q127 Q128 Q129 Q130 Q132 Q197 Q198 Q199 Q200 Q201 Q202 Q203 Q204 Q205 Q179 Q180 Q183 Q184 ) ///				

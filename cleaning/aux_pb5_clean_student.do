@@ -3,6 +3,7 @@
 * HARMONIZING PROVA BRASIL
 ***		
 
+
 *Harmonization of identification variables
 *------------------------------------------------------------------------------------------------------------------------*
 forvalues year = 2007(2)2017 {
@@ -11,36 +12,43 @@ forvalues year = 2007(2)2017 {
 	if `year' == 2007 {
 		drop 	ST_LINGUA_PORTUGUESA ST_MATEMATICA SIGLA_UF NO_MUNICIPIO NU_QTD_ALUNO
 		gen 	year = 2007
-		rename (ID_ALUNO-COD_MUNICIPIO ID_TURMA-NU_THETA_M) 		 (id_student grade network location coduf codmunic id_class start_class end_class codschool 			  score_port sd_port score_saeb_port sd_saeb_port sd_math score_saeb_math sd_saeb_math score_math)
+		rename (ID_ALUNO ID_SERIE ID_DEPENDENCIA_ADM ID_LOCALIZACAO COD_UF COD_MUNICIPIO ID_TURMA TX_HORARIO_INICIO TX_HORARIO_FINAL PK_COD_ENTIDADE NU_THETA_L NU_SETHETA_L NU_THETAT_L NU_SETHETAT_L NU_SETHETA_M NU_THETAT_M NU_SETHETAT_M NU_THETA_M) ///
+		       (id_student grade network location coduf codmunic id_class start_class end_class codschool score_port sd_port score_saeb_port sd_saeb_port sd_math score_saeb_math sd_saeb_math score_math)
+		tostring id_class, replace
 	}
 	
 	if `year' == 2009 {
 		drop 	st_lingua_portuguesa st_matematica sigla_uf no_municipio
 		gen 	year = 2009
-		rename (id_aluno id_turma-nu_sethetat_m) 		    		 (id_student id_class class_time grade codschool network location  coduf codmunic  		   			 	  score_port sd_port score_saeb_port sd_saeb_port score_math sd_math score_saeb_math sd_saeb_math)
+		rename (id_aluno id_turma co_turno id_serie pk_cod_entidade id_dependencia_adm id_localizacao cod_uf cod_municipio nu_theta_l nu_setheta_l nu_thetat_l nu_sethetat_l nu_theta_m nu_setheta_m nu_thetat_m nu_sethetat_m) ///
+		       (id_student id_class class_time grade codschool network location coduf codmunic score_port sd_port score_saeb_port sd_saeb_port score_math sd_math score_saeb_math sd_saeb_math)
 		tostring id_class, replace
 	}
 		
 	if `year' == 2011 {
 		drop 	in_*
-		rename (id_prova_brasil-id_aluno peso-desvio_padrao_mt_saeb) (year coduf codmunic codschool network location id_class class_time grade id_student weight 			  score_port sd_port score_saeb_port sd_saeb_port score_math sd_math score_saeb_math sd_saeb_math)
+		rename (id_prova_brasil id_uf id_municipio id_escola id_dependencia_adm id_localizacao id_turma id_turno id_serie id_aluno peso proficiencia_lp desvio_padrao_lp proficiencia_lp_saeb desvio_padrao_lp_saeb proficiencia_mt desvio_padrao_mt proficiencia_mt_saeb desvio_padrao_mt_saeb) ///
+		       (year coduf codmunic codschool network location id_class class_time grade id_student weight score_port sd_port score_saeb_port sd_saeb_port score_math sd_math score_saeb_math sd_saeb_math)
 		tostring id_class, replace
 	}
 	
 	if `year' ==  2013 | `year' == 2015 {
 		drop 	in_* tx_* id_bloco* id_caderno* id_regiao id_area estrato_aneb
-		rename (id_prova_brasil-desvio_padrao_mt_saeb) 				 (year coduf codmunic codschool network location id_class class_time grade id_student weight_lp weight_mt  score_port sd_port score_saeb_port sd_saeb_port score_math sd_math score_saeb_math sd_saeb_math)
+		rename (id_prova_brasil id_uf id_municipio id_escola id_dependencia_adm id_localizacao id_turma id_turno id_serie id_aluno peso_aluno_lp peso_aluno_mt proficiencia_lp desvio_padrao_lp proficiencia_lp_saeb desvio_padrao_lp_saeb proficiencia_mt desvio_padrao_mt proficiencia_mt_saeb desvio_padrao_mt_saeb) ///
+		       (year coduf codmunic codschool network location id_class class_time grade id_student weight_lp weight_mt score_port sd_port score_saeb_port sd_saeb_port score_math sd_math score_saeb_math sd_saeb_math)
 		tostring id_class, replace
 	}
 	
 	if `year' ==  2017 {
 		drop 	in_* tx_* id_bloco* id_caderno* id_regiao id_area estrato_aneb
-		rename (id_prova_brasil-erro_padrao_mt_saeb) 				 (year coduf codmunic codschool network location id_class class_time grade id_student weight_lp weight_mt  score_port sd_port score_saeb_port sd_saeb_port score_math sd_math score_saeb_math sd_saeb_math)
+		rename (id_prova_brasil id_uf id_municipio id_escola id_dependencia_adm id_localizacao id_turma id_turno id_serie id_aluno peso_aluno_lp peso_aluno_mt proficiencia_lp erro_padrao_lp proficiencia_lp_saeb erro_padrao_lp_saeb proficiencia_mt erro_padrao_mt proficiencia_mt_saeb erro_padrao_mt_saeb) ///
+		       (year coduf codmunic codschool network location id_class class_time grade id_student weight_lp weight_mt score_port sd_port score_saeb_port sd_saeb_port score_math sd_math score_saeb_math sd_saeb_math)
 		tostring id_class, replace
 	}
 	
 	save  "$output_pb/Prova Brasil Questionnaire_`year'.dta", replace
 }
+
 
 
 *Harmonization of the socioeconomic questionnaire 
@@ -132,17 +140,17 @@ forvalues year = 2007(2)2017 {
 		drop 	start_class end_class
 	}
 
-	if `year ' == 2007 | `year ' == 2009 {
+	if `year' == 2007 | `year' == 2009 {
 		order 	year coduf codmunic codschool network location id_class class_time id_student grade month_birth year_birth age score_port-sd_saeb_math
 		global 	variables age month_birth year_birth gender-aspiration
 	}
 	
-	if `year ' == 2011 {
+	if `year' == 2011 {
 		order 	year coduf codmunic codschool network location id_class class_time id_student grade month_birth year_birth age score_port-sd_saeb_math weight
 		global 	variables age month_birth year_birth gender-read_books	
 	}
 	
-	if `year ' >  2011 {
+	if `year' >  2011 {
 		order 	year coduf codmunic codschool network location id_class class_time id_student grade month_birth year_birth age score_port-sd_saeb_math weight_lp weight_mt
 		global 	variables age month_birth year_birth gender-read_books
 	}
@@ -166,10 +174,10 @@ forvalues year = 2007(2)2017 {
 	
 	*State
 	*--------------------------------------------------------------------------------------------------------------------*
-	label define state 11 "RO" 12 "AC" 13 "AM" 14 "RR" 15 "PA" 16 "AP" 17 "TO"  					///
-					   21 "MA" 22 "PI" 23 "CE" 24 "RN" 25 "PB" 26 "PE" 27 "AL" 28 "SE" 29 "BA" 		///
-					   31 "MG" 32 "ES" 33 "RJ" 35 "SP" 												///
-					   41 "PR" 42 "SC" 43 "RS" 														///
+	label define state 11 "RO" 12 "AC" 13 "AM" 14 "RR" 15 "PA" 16 "AP" 17 "TO"  ///
+					   21 "MA" 22 "PI" 23 "CE" 24 "RN" 25 "PB" 26 "PE" 27 "AL" 28 "SE" 29 "BA" ///
+					   31 "MG" 32 "ES" 33 "RJ" 35 "SP" ///
+					   41 "PR" 42 "SC" 43 "RS" ///
 					   50 "MS" 51 "MT" 52 "GO" 53 "DF"
 	label val coduf state
 
@@ -260,7 +268,7 @@ forvalues year = 2007(2)2017 {
 		
 		foreach var of varlist number_tv number_radio number_car number_bath number_room number_computer {
 			tab		`var' 
-			recode  `var' 		 (1 = 4) (2 = 1) (3 = 2) (4 5 = 3)
+			recode  `var' 	(1 = 4) (2 = 1) (3 = 2) (4 5 = 3)
 		}
 		recode number_fridge 	 (1 = 4) (2 = 1) (3 4 5 = 2) 
 		label  val number_computer number_computer
@@ -337,10 +345,10 @@ forvalues year = 2007(2)2017 {
 	recode time_tv_games    (1 5 = 1) (2 3 = 2) (4 = 3) 
 	recode time_clean_house (1 5 = 1) (2 3 = 2) (4 = 3) 
 		
-	label define time_tv_games			 1 "Don't watch or less than one hour" 2 "A couple hours" 3 "More than 3 hours" 
+	label define time_tv_games	1 "Don't watch or less than one hour" 2 "A couple hours" 3 "More than 3 hours" 
 	label val 	 time_tv_games time_tv_games
 
-	label define time_clean_house	 	 1 "Don't clean house or less than one" 2 "A couple hours" 3 "More than 3 hours" 
+	label define time_clean_house 	1 "Don't clean house or less than one" 2 "A couple hours" 3 "More than 3 hours" 
 	label val 	 time_clean_house time_clean_house
 	
 	
@@ -355,27 +363,27 @@ forvalues year = 2007(2)2017 {
 	
 	*Reading and cultural activities
 	*--------------------------------------------------------------------------------------------------------------------*
-	label define frequency  		    1 "Always/Often"  2 "Sometimes"  3  "Never/Almost never"
+	label define frequency  		    1 "Always/Often" 2 "Sometimes"  3  "Never/Almost never"
 
 	if `year' > 2009 {
 		foreach var of varlist read* go_* {
 			label val `var' frequency
 		}
 		label val go_school_library
-		label define go_school_library  1 "Always/Often"  2 "Sometimes"  3  "Never/Almost never"      4 "School doesn't have a library"
+		label define go_school_library  1 "Always/Often" 2 "Sometimes"  3 "Never/Almost never" 4 "School doesn't have a library"
 		label val go_school_library go_school_library
 	}
 	label val    parents_sch_meetings	 frequency
 
 	*Other
 	*--------------------------------------------------------------------------------------------------------------------*
-	label define homework 		        1 "Always/Often"  2 "Sometimes"  3  "Never/Almost never" 	  4 "Don't have homework"
+	label define homework 		        1 "Always/Often"  2 "Sometimes" 3 "Never/Almost never"  4 "Don't have homework"
 	
 	foreach var of varlist  do_homework* homework_corrected* {
 		label val `var' homework
 	}
 	 
-	label define enter_school 		    1 "Daycare" 	  2 "Pre-school" 3 "Grade 1" 			   	  4 "After grade 1"
+	label define enter_school 		    1 "Daycare" 2 "Pre-school" 3 "Grade 1" 4 "After grade 1"
 	label val 	 enter_school enter_school
 	
 	clonevar A = type_school
@@ -387,10 +395,10 @@ forvalues year = 2007(2)2017 {
 	replace type_school = 3  if 			  grade == 9 & A == 2 & network <  4	//there are 9th grade students that answered that only studied in private schools but the current school they are enrolled in is public....
 	drop A
 	
-	label define type_school		    1 "Only public school" 		     2 "Only in private school"   3 "Public and private schools" 		
+	label define type_school		    1 "Only public school" 2 "Only in private school" 3 "Public and private schools" 		
 	label val 	 type_school type_school
 	
-	label define aspiration 		    1 "Only study" 				     2 "Only work"  			  3 "Study and work" 			4 "Don't know" 
+	label define aspiration 		    1 "Only study" 2 "Only work" 3 "Study and work" 4 "Don't know" 
 	label val 	 aspiration aspiration
 	
 	gen 	only_intend_work =		  aspiration == 2 & grade == 9
@@ -556,116 +564,116 @@ replace performance_insuf = . if port_insuf  == . & math_insuf == .
 replace performance_basic = . if port_basic  == . & math_basic == .
 replace performance_adequ = . if port_adequ  == . & math_adequ == .
 
-label variable male								"1 for male and 0, otherwise"
-label variable white 							"1 for white and 0, otherwise"
-label variable coduf 							"State ID"
-label variable codmunic 						"Municipality ID"
-label variable codschool 						"School ID"
-label variable network 							"School administrative network"
-label variable grade 							"Grade"
-label variable id_student 						"Student ID"
-label variable year 							"Year"
-label variable age 								"Student's age"
-label variable urban							"1: Urban area. 0: Rural area"
-label variable class_time						"1: Morning. 2: Afternoon. 3: Night"
-label variable id_class							"Code of the class - you can check students in the same classroom"
-label variable gender							"Student's gender"
-label variable skincolor   						"Student's skin color"
-label variable mother_edu  						"Mother's education (highest degree acquired)"
-label variable father_edu  						"Father's education (highest degree acquired)"
-label variable parents_sch_meetings 			"Parental attendance to school meetings"
-label variable incentive_study 					"1 if parents encourage to study and 0, otherwise"
-label variable incentive_homework 				"1 if parents encourage to do the homework and 0, otherwise"
-label variable incentive_read 					"1 if parents encourage to read and 0, otherwise"
-label variable incentive_school 				"1 if parents encourage to go to school and 0, otherwise"
-label variable incentive_talk 					"1 if parents talk about what happens in the school and 0, otherwise"	
-label variable time_tv_games					"Leisure time spent on TV, games, internet during on a school day"
-label variable time_clean_house 				"Leisure time spent on domestic activities during on a school day"
-label variable enter_school 					"When the student started school"
-label variable number_repetitions				"Number of repetitions"
-label variable number_dropouts					"Number of dropouts"
-label variable do_homework_port 				"Frequency that you do your Portuguese homework"
-label variable do_homework_math  				"Frequency that you do your Math homework"
-label variable homework_corrected_port  		"Frequency that your Portuguese teacher corrects the homework"
-label variable homework_corrected_math  		"Frequency that your Math teacher corrects the homework"
-label variable aspiration 						"Student aspiration after middle school"
-label variable number_tv 						"Number of TVs in the household"
-label variable number_radio 					"Number of radios in the household"
-label variable dvd 								"1 if the household has a DVD and 0, otherwise"
-label variable number_fridge 					"Number of fridges in the household"
-label variable wash_mash 						"1 if the household has a washing machine and 0, otherwise"
-label variable number_car 						"Number of cars in the household"
-label variable computer_internet 				"1: Computer + Internet. 2: Computer and no Internet. 3: Don’t have computer."
-label variable number_bath 						"Number of baths in the household"
-label variable number_room 						"Number of rooms in the household"
-label variable n_family_members 				"Number of family members"
-label variable maid 							"1 if the household has a maid and 0, otherwise"
-label variable live_mother 						"1 if lives with mother (or legal responsible) and 0, otherwise"
-label variable mother_literate 					"1 if mother knows how to read and write and 0, otherwise"
-label variable mother_reads 					"1 if see the mother reading and 0, otherwise"
-label variable live_father 						"1 if lives with father (or legal responsible) and 0, otherwise"
-label variable father_literate 					"1 if father knows how to read and write and 0, otherwise"
-label variable father_reads 					"1 if see the father reading and 0, otherwise"
-label variable read_news 						"Frequency: student reads newspapers"
-label variable read_magazines 					"Frequency: student reads maganizes"
-label variable read_cartoons 					"Frequency: student reads cartoons"
-label variable read_other_magazines 			"Frequency: student reads other magazines"
-label variable read_internetnews 				"Frequency: student reads news on the internet"
-label variable go_library 						"Frequency: student goes to the library"
-label variable go_movies 						"Frequency: student goes to the movies"
-label variable go_cultural_act 					"Frequency: student goes to theater, museums, musicals"
-label variable tv 								"1 if the household has a TV and 0, otherwise"
-label variable radio 							"1 if the household has a radio and 0, otherwise"
-label variable car								"1 if the household has a car and 0, otherwise"
-label variable bath 							"1 if the household has a bath and 0, otherwise"
-label variable room 							"1 if the household has a room and 0, otherwise"
-label variable fridge 							"1 if the household has a fridge and 0, otherwise"
-label variable computer 						"1 if the household has a computer and 0, otherwise"
-label variable ever_dropped 					"1 if the student has ever dropped and 0, otherwise"
-label variable ever_repeated 					"1 if the student has ever repeated and 0, otherwise"
-label variable valid_score 						"1 if the student has performance data for Portuguese and Math"
-label variable socio_eco 						"Socioeconomic Indicador for Household"
-label variable sd_port 							"Standard deviation of portuguese score (mean = 0, sd = 1)"
-label variable sd_saeb_port 					"Standard deviation of portuguese score (SAEB scale)"
-label variable sd_math 							"Standard deviation of math score (mean = 0, sd = 1)"
-label variable sd_saeb_math 					"Standard deviation of math score (SAEB scale)"
-label variable score_port 						"Portuguese score (mean = 0, sd = 1)"
-label variable score_saeb_port 					"Portuguese score (SAEB scale)"
-label variable score_math 						"Math score (mean = 0, sd = 1)"
-label variable score_saeb_math 					"Math score (SAEB scale)"
-label variable weight_lp 						"Student's weight - Portuguese. Starting in 2013"
-label variable weight_mt 						"Student's weight - Math. Starting in 2013"
-label variable weight							"Student's weight. Available only in 2011."
-label variable mother_edu_lessprimary 			"1 if student's mother has less than primary and 0, otherwise"
-label variable mother_edu_primary 				"1 if student's mother finished primary  and 0, otherwise"
-label variable mother_edu_middleschool 			"1 if student's mother finished  middle school and 0, otherwise"
-label variable number_computer 					"Number of computers in the household. Starting at 2013"
-label variable freezer 							"1 if the household has freezer and 0, otherwise"
-label variable read_books_general 				"Frequency: student reads books in general, 9th graders"
-label variable read_literature 					"Frequency: student literature books, 9th graders"
-label variable read_books 						"Frequency: student reads books, 5th graders"
-label variable go_parties_neighbor 				"1 if the student goes to parties in the neighboorhood and 0, otherwise"
-label variable go_school_library 				"1 if the student goes to the school's library and 0, otherwise"
-label variable work 							"1 if the student work and 0, otherwise"
-label variable type_school 						"Type of school since 1st/grade for 5th/graders, and since 6th/grade for 9th"
-label variable like_port 						"1 if the student likes portuguese and 0, otherwise"
-label variable like_math 						"1 if the student likes math and 0, otherwise"
-label variable mother_edu_highschool 			"1 if student's mother finished high school and 0, otherwise"
-label variable father_edu_lessprimary 			"1 if student's father has less than primary and 0, otherwise"
-label variable father_edu_primary 				"1 if student's father finished primary  and 0, otherwise"
-label variable father_edu_middleschool 			"1 if student's father finished  middle school and 0, otherwise"
-label variable father_edu_highschool 			"1 if student's father finished high school and 0, otherwise"
-label variable incentive_parents_meeting		"1 if parents go to parent's meeting"
-label variable only_intend_work					"Children only intend to work after 9th grade"
-label variable only_intend_work					"Children only intend to work after 9th grade"
-label variable do_homework_port_always 			"Children always finish the homework"
-label variable do_homework_math_always 			"Children always finish the homework"
-label variable do_homework_both_always 			"Children always finish the homework"
+label variable male				"1 for male and 0, otherwise"
+label variable white 				"1 for white and 0, otherwise"
+label variable coduf 				"State ID"
+label variable codmunic 			"Municipality ID"
+label variable codschool 			"School ID"
+label variable network 				"School administrative network"
+label variable grade 				"Grade"
+label variable id_student 			"Student ID"
+label variable year 				"Year"
+label variable age 				"Student's age"
+label variable urban				"1: Urban area. 0: Rural area"
+label variable class_time			"1: Morning. 2: Afternoon. 3: Night"
+label variable id_class				"Code of the class - you can check students in the same classroom"
+label variable gender				"Student's gender"
+label variable skincolor   			"Student's skin color"
+label variable mother_edu  			"Mother's education (highest degree acquired)"
+label variable father_edu  			"Father's education (highest degree acquired)"
+label variable parents_sch_meetings 		"Parental attendance to school meetings"
+label variable incentive_study 			"1 if parents encourage to study and 0, otherwise"
+label variable incentive_homework 		"1 if parents encourage to do the homework and 0, otherwise"
+label variable incentive_read 			"1 if parents encourage to read and 0, otherwise"
+label variable incentive_school 		"1 if parents encourage to go to school and 0, otherwise"
+label variable incentive_talk 			"1 if parents talk about what happens in the school and 0, otherwise"	
+label variable time_tv_games			"Leisure time spent on TV, games, internet during on a school day"
+label variable time_clean_house 		"Leisure time spent on domestic activities during on a school day"
+label variable enter_school 			"When the student started school"
+label variable number_repetitions		"Number of repetitions"
+label variable number_dropouts			"Number of dropouts"
+label variable do_homework_port 		"Frequency that you do your Portuguese homework"
+label variable do_homework_math  		"Frequency that you do your Math homework"
+label variable homework_corrected_port  	"Frequency that your Portuguese teacher corrects the homework"
+label variable homework_corrected_math  	"Frequency that your Math teacher corrects the homework"
+label variable aspiration 			"Student aspiration after middle school"
+label variable number_tv 			"Number of TVs in the household"
+label variable number_radio 			"Number of radios in the household"
+label variable dvd 				"1 if the household has a DVD and 0, otherwise"
+label variable number_fridge 			"Number of fridges in the household"
+label variable wash_mash 			"1 if the household has a washing machine and 0, otherwise"
+label variable number_car 			"Number of cars in the household"
+label variable computer_internet 		"1: Computer + Internet. 2: Computer and no Internet. 3: Dont have computer."
+label variable number_bath 			"Number of baths in the household"
+label variable number_room 			"Number of rooms in the household"
+label variable n_family_members 		"Number of family members"
+label variable maid 				"1 if the household has a maid and 0, otherwise"
+label variable live_mother 			"1 if lives with mother (or legal responsible) and 0, otherwise"
+label variable mother_literate 			"1 if mother knows how to read and write and 0, otherwise"
+label variable mother_reads 			"1 if see the mother reading and 0, otherwise"
+label variable live_father 			"1 if lives with father (or legal responsible) and 0, otherwise"
+label variable father_literate 			"1 if father knows how to read and write and 0, otherwise"
+label variable father_reads 			"1 if see the father reading and 0, otherwise"
+label variable read_news 			"Frequency: student reads newspapers"
+label variable read_magazines 			"Frequency: student reads maganizes"
+label variable read_cartoons 			"Frequency: student reads cartoons"
+label variable read_other_magazines 		"Frequency: student reads other magazines"
+label variable read_internetnews 		"Frequency: student reads news on the internet"
+label variable go_library 			"Frequency: student goes to the library"
+label variable go_movies 			"Frequency: student goes to the movies"
+label variable go_cultural_act 			"Frequency: student goes to theater, museums, musicals"
+label variable tv 				"1 if the household has a TV and 0, otherwise"
+label variable radio 				"1 if the household has a radio and 0, otherwise"
+label variable car				"1 if the household has a car and 0, otherwise"
+label variable bath 				"1 if the household has a bath and 0, otherwise"
+label variable room 				"1 if the household has a room and 0, otherwise"
+label variable fridge 				"1 if the household has a fridge and 0, otherwise"
+label variable computer 			"1 if the household has a computer and 0, otherwise"
+label variable ever_dropped 			"1 if the student has ever dropped and 0, otherwise"
+label variable ever_repeated 			"1 if the student has ever repeated and 0, otherwise"
+label variable valid_score 			"1 if the student has performance data for Portuguese and Math"
+label variable socio_eco 			"Socioeconomic Indicador for Household"
+label variable sd_port 				"Standard deviation of portuguese score (mean = 0, sd = 1)"
+label variable sd_saeb_port 			"Standard deviation of portuguese score (SAEB scale)"
+label variable sd_math 				"Standard deviation of math score (mean = 0, sd = 1)"
+label variable sd_saeb_math 			"Standard deviation of math score (SAEB scale)"
+label variable score_port 			"Portuguese score (mean = 0, sd = 1)"
+label variable score_saeb_port 			"Portuguese score (SAEB scale)"
+label variable score_math 			"Math score (mean = 0, sd = 1)"
+label variable score_saeb_math 			"Math score (SAEB scale)"
+label variable weight_lp 			"Student's weight - Portuguese. Starting in 2013"
+label variable weight_mt 			"Student's weight - Math. Starting in 2013"
+label variable weight				"Student's weight. Available only in 2011."
+label variable mother_edu_lessprimary 		"1 if student's mother has less than primary and 0, otherwise"
+label variable mother_edu_primary 		"1 if student's mother finished primary  and 0, otherwise"
+label variable mother_edu_middleschool 		"1 if student's mother finished  middle school and 0, otherwise"
+label variable number_computer 			"Number of computers in the household. Starting at 2013"
+label variable freezer 				"1 if the household has freezer and 0, otherwise"
+label variable read_books_general 		"Frequency: student reads books in general, 9th graders"
+label variable read_literature 			"Frequency: student literature books, 9th graders"
+label variable read_books 			"Frequency: student reads books, 5th graders"
+label variable go_parties_neighbor 		"1 if the student goes to parties in the neighboorhood and 0, otherwise"
+label variable go_school_library 		"1 if the student goes to the school's library and 0, otherwise"
+label variable work 				"1 if the student work and 0, otherwise"
+label variable type_school 			"Type of school since 1st/grade for 5th/graders, and since 6th/grade for 9th"
+label variable like_port 			"1 if the student likes portuguese and 0, otherwise"
+label variable like_math 			"1 if the student likes math and 0, otherwise"
+label variable mother_edu_highschool 		"1 if student's mother finished high school and 0, otherwise"
+label variable father_edu_lessprimary 		"1 if student's father has less than primary and 0, otherwise"
+label variable father_edu_primary 		"1 if student's father finished primary  and 0, otherwise"
+label variable father_edu_middleschool 		"1 if student's father finished  middle school and 0, otherwise"
+label variable father_edu_highschool 		"1 if student's father finished high school and 0, otherwise"
+label variable incentive_parents_meeting	"1 if parents go to parent's meeting"
+label variable only_intend_work			"Children only intend to work after 9th grade"
+label variable only_intend_work			"Children only intend to work after 9th grade"
+label variable do_homework_port_always 		"Children always finish the homework"
+label variable do_homework_math_always 		"Children always finish the homework"
+label variable do_homework_both_always 		"Children always finish the homework"
 label variable homework_corrected_port_always   "Teacher always corrects the homework"
 label variable homework_corrected_math_always 	"Teacher always corrects the homework"
 label variable homework_corrected_both_always 	"Teacher always corrects the homework"
-label variable private_school 					"Already attended Private School"
-label variable preschool						"Children did preschool"
+label variable private_school 			"Already attended Private School"
+label variable preschool			"Children did preschool"
 			/*
 label variable parents_effort_learning_mean 	"Mean of parent's effort (encourage study/homework/go school/read/talk)"
 label variable parents_effort_learning_all 		"1 if the parent's support 100% and 0, otherwise"

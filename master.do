@@ -17,7 +17,7 @@ cd "${dir}"
 set seed 12345
 
 // Opening Log file
-log using "logs/log_file.log", replace text
+*log using "logs/log_file.log", replace text
 
 *-----------------------------------------*
 * INSTALLED PROGRAMS
@@ -116,24 +116,22 @@ global region "fcolor(white) lcolor(white) ifcolor(white) ilcolor(white)"
 *-----------------------------------------*
 
 // Cleaning
-*do "cleaning/1_pisa2012_cleaning.do" 
 
-	display "End of PISA 2012"
-
-*do "cleaning/2_pisa2022_cleaning.do" 
-
-	display "End of PISA 2022"	
-	
-do "cleaning/3_pb_cleaning.do" 
+do "cleaning/1_pb_cleaning.do" 
 
 	display "End of Prova Brasil"
 
-do "cleaning/4_pol_turnover_cleaning.do" 
+do "cleaning/2_pol_turnover_cleaning.do" 
 
 	display "End of Political turnover"
 
+do "cleaning/3_pisa2012_cleaning.do" 
 
-/*	
+	display "End of PISA 2012"
+
+do "cleaning/4_pisa2022_cleaning.do" 
+
+	display "End of PISA 2022"	
 	
 // Analysis
 do "analysis/table_1.do"
@@ -174,6 +172,6 @@ do "analysis/figure_a5.do"
 
 
 // Closing log
-log close
+*log close
 
 

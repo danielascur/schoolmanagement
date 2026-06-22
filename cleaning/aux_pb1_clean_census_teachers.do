@@ -4,7 +4,7 @@
 *--------------------------------------------------------------------------------------------------------------------------------*
 cap program drop Professores
 program define Professores
-syntax, ano(string) divisao(string)
+syntax, ano(string)
 
 	local Teacher 1Grade 2Grade 3Grade 4Grade 5Grade 6Grade 7Grade 8Grade 9Grade
 	
@@ -105,7 +105,7 @@ syntax, ano(string) divisao(string)
 	label 	define occupation 1 "Docente" 2 "Auxiliar da educação infantil" 3 "Monitor" 4 "Intérprete de Libras" 5 "Docente tutor - EAD" 6 "Docente auxiliar - EAD"
 	label 	val    occupation2 occupation
 	
-	save "$output_census/Professores Harmonizado_`ano'`divisao'.dta", replace
+	save "$output_census/Professores Harmonizado_`ano'.dta", replace
 
 	*Professores por escola
 	keep if occupation2 == 1 		
@@ -126,7 +126,7 @@ syntax, ano(string) divisao(string)
 		}
 		collapse (sum)  Teacher*,			   				 by (year coduf network codmunic codschool)
 	
-	save "$output_census/Professores por escola_`ano'`divisao'.dta", replace
+	save "$output_census/Professores por escola_`ano'.dta", replace
 
 	/*
 	Nessa base, cada linha é uma turma. Um professor pode aparecer mais de uma vez se: 
@@ -144,19 +144,9 @@ end
 *2*																
 * Applying function
 *--------------------------------------------------------------------------------------------------------------------------------*
-	foreach year in 2007 2009 2010 2011 2012 2013  {
-		foreach region in RO AC AM RR PA AP TO MA PI CE RN PB PE AL SE BA MG ES RJ SP PR SC RS MS MT GO DF{
-			use "$input_census/Professores`year'`region'.dta", clear
-			Professores, ano(`year') divisao(`region')
-		}
-	}
-
-
-	foreach year in 2014 2015 2016 2017 { 
-		foreach region in CO NORDESTE NORTE SUDESTE SUL {
-			use "$input_census/Professores`year'`region'.dta", clear
-			Professores, ano(`year') divisao(`region')		
-		}
+	foreach year in 2007 2009 2010 2011 2012 2013 2014 2015 2016 2017 {
+		use "$input_census/Professores`year'.dta", clear
+		Professores, ano(`year')
 	}
 
 
@@ -165,16 +155,8 @@ end
 *CLEANING
 *--------------------------------------------------------------------------------------------------------------------------------*
 	clear
-	foreach year in 2007 2009 2010 2011 2012 2013 { 
-		foreach region in RO AC AM RR PA AP TO MA PI CE RN PB PE AL SE BA MG ES RJ SP PR SC RS MS MT GO DF {
-			append using "$output_census/Professores por escola_`year'`region'.dta",
-		}
-	}
-
-	foreach year in 2014 2015 2016 2017 { 
-		foreach region in NORTE NORDESTE SUL SUDESTE CO {
-			append using "$output_census/Professores por escola_`year'`region'.dta"
-		}
+	foreach year in 2007 2009 2010 2011 2012 2013 2014 2015 2016 2017 {
+		append using "$output_census/Professores por escola_`year'.dta"
 	}
 	save "$output_census/Teachers per school.dta", replace
 	

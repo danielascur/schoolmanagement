@@ -9,6 +9,8 @@ set more off
 * Running PISA globals
 do "cleaning/aux_pisa0_globals.do"
 
+
+
 * PISA 2012: Converting raw files (.txt) to .dta
 do "cleaning/aux_pisa1_build_cog_score.do"
 do "cleaning/aux_pisa2_build_cog_item.do"
@@ -430,6 +432,7 @@ foreach var in stratio lstu compweb govfund grade escs schloc stu_immi {
 save "cleaning/tempdata/PISA2012_intermediate.dta", replace
 
 
+*use "cleaning/tempdata/PISA2012_intermediate.dta", clear
 
 
 *-----------------------------------------*
@@ -437,55 +440,73 @@ save "cleaning/tempdata/PISA2012_intermediate.dta", replace
 *-----------------------------------------*
 
 * Computing scores using pv
-g math = .
-g reading = .
-g science = .
-				
+tempfile pisa2012_full school_scores
+tempname score_post
+save `pisa2012_full', replace
+
+keep cnt uschool_id pv*math pv*read pv*scie w_fstuwt w_fstr*
+
 * Number of students per school taking the test
 egen stu_scho = count(pv1math), by(uschool_id)
 
-* Building student test scores from plausible values	
-levelsof uschool_id, local(schools)
+qui levelsof uschool_id, local(schools)
+
+postfile `score_post' str3 cnt str20 uschool_id double math reading science stu_scho using `school_scores', replace
+
+* Building student test scores from plausible values
 foreach sc of local schools {
 	display as red "`sc'"
-	qui su stu_scho if uschool_id=="`sc'"
+	
+	preserve
+	keep if uschool_id=="`sc'"
+	local school_cnt = cnt[1]
+	qui su stu_scho
 	local test = r(mean)
+	
 	if `test'>1 {
 		
 		* Math
-		pv, pv(pv*math) weight(w_fstuwt) brr rw(w_fstr*) fays(0.5): reg @pv [aw=@w] if uschool_id=="`sc'"
+		pv, pv(pv*math) weight(w_fstuwt) brr rw(w_fstr*) fays(0.5): reg @pv [aw=@w]
 		matrix T = r(table)
-		replace math = T[1,1] if uschool_id=="`sc'"
+		local math_score = T[1,1]
 			
 		* Reading
-		pv, pv(pv*read) weight(w_fstuwt) brr rw(w_fstr*) fays(0.5): reg @pv [aw=@w] if uschool_id=="`sc'"
+		pv, pv(pv*read) weight(w_fstuwt) brr rw(w_fstr*) fays(0.5): reg @pv [aw=@w]
 		matrix T = r(table)
-		replace reading = T[1,1] if uschool_id=="`sc'"
+		local reading_score = T[1,1]
 				
 		* Science
-		pv, pv(pv*scie) weight(w_fstuwt) brr rw(w_fstr*) fays(0.5): reg @pv [aw=@w] if uschool_id=="`sc'"
+		pv, pv(pv*scie) weight(w_fstuwt) brr rw(w_fstr*) fays(0.5): reg @pv [aw=@w]
 		matrix T = r(table)
-		replace science = T[1,1] if uschool_id=="`sc'"
+		local science_score = T[1,1]
 		}
 		
 	else {
 		* Math
-		pv, pv(pv*math) weight(w_fstuwt) brr rw(w_fstr*) fays(0.5): mean @pv [aw=@w] if uschool_id=="`sc'"
+		pv, pv(pv*math) weight(w_fstuwt) brr rw(w_fstr*) fays(0.5): mean @pv [aw=@w]
 		matrix T = r(table)
-		replace math = T[1,1] if uschool_id=="`sc'"
+		local math_score = T[1,1]
 		
 		* Reading
-		pv, pv(pv*read) weight(w_fstuwt) brr rw(w_fstr*) fays(0.5): mean @pv [aw=@w] if uschool_id=="`sc'"
+		pv, pv(pv*read) weight(w_fstuwt) brr rw(w_fstr*) fays(0.5): mean @pv [aw=@w]
 		matrix T = r(table)
-		replace reading = T[1,1] if uschool_id=="`sc'"
+		local reading_score = T[1,1]
 				
 		* Science
-		pv, pv(pv*scie) weight(w_fstuwt) brr rw(w_fstr*) fays(0.5): mean @pv [aw=@w] if uschool_id=="`sc'"
+		pv, pv(pv*scie) weight(w_fstuwt) brr rw(w_fstr*) fays(0.5): mean @pv [aw=@w]
 		matrix T = r(table)
-		replace science = T[1,1] if uschool_id=="`sc'"
-	}
+		local science_score = T[1,1]
 	}
 	
+	post `score_post' ("`school_cnt'") ("`sc'") (`math_score') (`reading_score') (`science_score') (`test')
+	restore
+	}
+	
+postclose `score_post'
+
+use `pisa2012_full', clear
+merge m:1 cnt uschool_id using `school_scores', nogen 
+		
 	
 * Saving
 compress

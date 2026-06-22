@@ -307,7 +307,11 @@ drop school_id
 	keep cnt ${ids} ${scc} ${stu2022} ${sch2022} ${outcomes2022} ${pv_efactors2022} ${efactors2022} ${practices_common2022}
 	
 	
-	
+save "cleaning/tempdata/PISA2022_intermediate.dta", replace
+
+
+*use "cleaning/tempdata/PISA2022_intermediate.dta", clear	
+
 
 *-----------------------------------------*
 * BUILD SCHOOL-LEVEL SCORES
@@ -315,37 +319,51 @@ drop school_id
 
 // Generate school-level data 
 
-* Computing score by school
-
-generate math = .
-generate reading = .
-generate science = .
-
 * Number of students per school
 egen stu_scho = count(PV1MATH), by(uschool_id)
 drop if stu_scho==1
 
+* Computing score by school
+tempfile pisa2022_full school_scores
+tempname score_post
+save `pisa2022_full', replace
+
+keep cnt uschool_id PV*MATH PV*READ PV*SCIE W_FSTUWT W_FSTURWT* stu_scho
+
 	
 levelsof uschool_id, local(schools)
+postfile `score_post' str3 cnt str30 uschool_id double math reading science using `school_scores', replace
+
 foreach sc of local schools {
-	quietly sum stu_scho if uschool_id=="`sc'"
+	preserve
+	keep if uschool_id=="`sc'"
+	local school_cnt = cnt[1]
+	quietly sum stu_scho
 	local test = r(mean)
 	display as red "`sc', test result = `test'"
 		* Math
-			pv, pv(PV*MATH) weight(W_FSTUWT) brr rw(W_FSTURWT*) fays(0.5): reg @pv [aw=@w] if uschool_id=="`sc'"
+			pv, pv(PV*MATH) weight(W_FSTUWT) brr rw(W_FSTURWT*) fays(0.5): reg @pv [aw=@w]
 			matrix T = r(table)
-			replace math = T[1,1] if uschool_id=="`sc'"
+			local math_score = T[1,1]
 		
 		* Reading
-			pv, pv(PV*READ) weight(W_FSTUWT) brr rw(W_FSTURWT*) fays(0.5): reg @pv [aw=@w] if uschool_id=="`sc'"
+			pv, pv(PV*READ) weight(W_FSTUWT) brr rw(W_FSTURWT*) fays(0.5): reg @pv [aw=@w]
 			matrix T = r(table)
-			replace reading = T[1,1] if uschool_id=="`sc'"
+			local reading_score = T[1,1]
 			
 		* Science
-			pv, pv(PV*SCIE) weight(W_FSTUWT) brr rw(W_FSTURWT*) fays(0.5): reg @pv [aw=@w] if uschool_id=="`sc'"
+			pv, pv(PV*SCIE) weight(W_FSTUWT) brr rw(W_FSTURWT*) fays(0.5): reg @pv [aw=@w]
 			matrix T = r(table)
-			replace science = T[1,1] if uschool_id=="`sc'"
+			local science_score = T[1,1]
+			
+	post `score_post' ("`school_cnt'") ("`sc'") (`math_score') (`reading_score') (`science_score')
+	restore
 }
+
+postclose `score_post'
+
+use `pisa2022_full', clear
+merge m:1 cnt uschool_id using `school_scores', nogen
 
 
 * Saving

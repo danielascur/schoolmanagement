@@ -9,7 +9,8 @@
 				if `year' == 2007 {
 					gen 	 year = 2007
 					drop 	 NO_MUNICIPIO SIGLA_UF  DS_DISCIPLINA
-					rename  (PK_COD_ENTIDADE-ID_SERIE) (codschool network location coduf codmunic id_class grade)
+					rename  (PK_COD_ENTIDADE ID_DEPENDENCIA_ADM ID_LOCALIZACAO COD_UF COD_MUNICIPIO ID_TURMA ID_SERIE) ///
+							(codschool network location coduf codmunic id_class grade)
 					rename (Q1 Q2 Q3 Q4 Q5 Q6 Q8 Q9 Q10 Q16 Q15 Q17 Q18 Q19 Q23 Q20 Q21 Q22 Q47 Q49 Q52 Q53 Q54 Q77 Q78 Q79 Q73 Q76 Q80 Q74 Q82 Q83 Q59 Q60 Q63 Q64 Q66 Q67 Q68 Q69 Q72 Q71 Q65 Q94 Q114 Q115 Q118 Q119 Q120 Q121 Q122 Q123 Q56 Q57 Q58 Q130 Q126 Q127 Q131 Q55 ) ///
 					 	   (teacher_gender teacher_age_range teacher_skincolor teacher_edu teacher_years_graduation type_university type_education postgrad area_postgrad teacher_wage teacher_other_job experience_asteacher teacher_exp_school teacher_exp_grade teacher_work_contract teacher_workhours_school nu_schools_work teacher_workhours_total use_news use_literature_books use_copy_machine pedagogic_plan meetings_class_council principal_learning principal_norms principal_maintenance principal_motivation principal_innovation principal_respect principal_trust work_decisions my_ideas def_schoolinfra def_curricula def_cover_curricula def_2muchwork def_teacher_insatisfaction def_student_socioback def_parents_culturalback def_noparents_support def_low_selfesteem def_student_loweffort def_bad_behavior def_absenteeism violence_lifethreat violence_student_threat violence_theft violence_robb violence_students_alcohol violence_students_drugs violence_students_knife violence_students_gun expec_finish_grade9 expec_finish_grade12 expec_get_college received_book students_books books_since_beg_year quality_books share_curricula )
 				}
@@ -17,16 +18,20 @@
 				if `year' == 2009 {
 					drop 	 no_municipio sigla_uf
 					gen 	 year = 2009
-					rename  (pk_cod_entidade-id_serie)(codschool network location coduf codmunic id_class grade)
+					rename  (pk_cod_entidade id_dependencia_adm id_localizacao cod_uf cod_municipio id_turma id_serie) ///
+							(codschool network location coduf codmunic id_class grade)
 					rename  (Q1 Q2 Q3 Q4 Q5 Q6 Q8 Q9 Q10 Q16 Q15 Q17 Q18 Q19 Q23 Q20 Q21 Q22 Q47 Q50 Q54 Q55 Q56 Q81 Q82 Q83 Q77 Q80 Q84 Q78 Q86 Q87 Q63 Q66 Q67 Q68 Q69 Q70 Q71 Q72 Q74 Q75 Q76 Q98 Q118 Q119 Q122 Q123 Q124 Q125 Q126 Q127 Q60 Q61 Q62 Q134 Q130 Q131 Q135 Q59 ) ///
 							(teacher_gender teacher_age_range teacher_skincolor teacher_edu teacher_years_graduation type_university type_education postgrad area_postgrad teacher_wage teacher_other_job experience_asteacher teacher_exp_school teacher_exp_grade teacher_work_contract teacher_workhours_school nu_schools_work teacher_workhours_total use_news use_literature_books use_copy_machine pedagogic_plan meetings_class_council principal_learning principal_norms principal_maintenance principal_motivation principal_innovation principal_respect principal_trust work_decisions my_ideas def_schoolinfra def_curricula def_cover_curricula def_2muchwork def_teacher_insatisfaction def_student_socioback def_parents_culturalback def_noparents_support def_low_selfesteem def_student_loweffort def_bad_behavior def_absenteeism violence_lifethreat violence_student_threat violence_theft violence_robb violence_students_alcohol violence_students_drugs violence_students_knife violence_students_gun expec_finish_grade9 expec_finish_grade12 expec_get_college received_book students_books books_since_beg_year quality_books share_curricula )
 					}
 				
-				if `year' == 2011 					rename (id_prova_brasil-in_preenchimento) 			   (year coduf codmunic codschool network location id_class			  grade valid_questionnaire)
+				if `year' == 2011 					rename (id_prova_brasil id_uf id_municipio id_escola id_dependencia_adm id_localizacao id_turma id_serie in_preenchimento) ///
+														   (year coduf codmunic codschool network location id_class grade valid_questionnaire)
 				
-				if `year' == 2013 | `year' == 2015  rename (id_prova_brasil-in_preenchimento_questionario) (year coduf codmunic codschool network location id_class			  grade valid_questionnaire)
+				if `year' == 2013 | `year' == 2015  rename (id_prova_brasil id_uf id_municipio id_escola id_dependencia_adm id_localizacao id_turma id_serie in_preenchimento_questionario) ///
+														   (year coduf codmunic codschool network location id_class grade valid_questionnaire)
 				
-				if `year' == 2017					rename (id_prova_brasil-in_preenchimento_questionario) (year coduf codmunic codschool network location id_class id_teacher grade valid_questionnaire)
+				if `year' == 2017					rename (id_prova_brasil id_uf id_municipio id_escola id_dependencia_adm id_localizacao id_turma co_professor id_serie in_preenchimento_questionario) ///
+														   (year coduf codmunic codschool network location id_class id_teacher grade valid_questionnaire)
 
 				if `year' == 2011 {
 					rename  (Q1 Q2 Q3 Q4 Q5 Q6 Q8 Q9 Q10 Q16 Q15 Q17 Q18 Q19 Q23 Q20 Q21 Q22 Q37 Q38 Q41 Q42 Q43 Q64 Q65 Q66 Q60 Q63 Q67 Q61 Q69 Q70 Q46 Q49 Q50 Q51 Q52 Q53 Q54 Q55 Q57 Q58 Q59 Q81 Q101 Q102 Q105 Q106 Q107 Q108 Q109 Q110 Q123 Q124 Q125 Q128 Q126 Q127 Q129 Q121 ) ///
@@ -37,7 +42,7 @@
 					rename (Q1 Q2 Q3 Q4 Q5 Q6 Q7 Q8 Q9 Q10 Q11 Q13 Q14 Q15 Q16 Q17 Q18 Q19 Q44 Q45 Q48 Q51 Q52 Q61 Q62 Q63 Q64 Q65 Q66 Q67 Q68 Q69 Q70 Q72 Q73 Q74 Q75 Q76 Q77 Q78 Q79 Q80 Q81 Q82 Q85 Q86 Q87 Q88 Q89 Q90 Q91 Q92 Q94 Q95 Q96 Q98 Q99 Q100 Q101 Q106 ) ///
 						   (teacher_gender teacher_age_range teacher_skincolor teacher_edu teacher_years_graduation type_university type_education postgrad area_postgrad teacher_wage teacher_other_job experience_asteacher teacher_exp_school teacher_exp_grade teacher_work_contract teacher_workhours_school nu_schools_work teacher_workhours_total use_news use_literature_books use_copy_machine pedagogic_plan meetings_class_council principal_learning principal_norms principal_maintenance principal_motivation principal_innovation principal_respect principal_trust work_decisions my_ideas def_schoolinfra def_curricula def_cover_curricula def_2muchwork def_teacher_insatisfaction def_student_socioback def_parents_culturalback def_noparents_support def_low_selfesteem def_student_loweffort def_bad_behavior def_absenteeism violence_lifethreat violence_student_threat violence_theft violence_robb violence_students_alcohol violence_students_drugs violence_students_knife violence_students_gun expec_finish_grade9 expec_finish_grade12 expec_get_college received_book students_books books_since_beg_year quality_books share_curricula )
 				}
-				if `year' > 2007 tostring id_class, replace
+				tostring id_class, replace
 				drop Q*
 				destring codschool network location coduf codmunic grade, replace
 				tempfile `year'
@@ -50,6 +55,7 @@
 			append using ``year''
 		}
 		order year coduf codmunic codschool  network location valid* id_teacher id_class grade
+		
 		
 
 		*Network

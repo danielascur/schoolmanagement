@@ -89,7 +89,8 @@ unique codschool // 43736 schools
 * Saving as temp
 save "cleaning/tempdata/mediator_same_sample_Z_prev_year.dta", replace
 
-
+* Reasetting global of other controls (it was previously modified in figure_5_table_5.do)
+global other_controls "urban m_urban"
 
 * Appending previous year variables to other_controls (X)
 local z_prev ""
