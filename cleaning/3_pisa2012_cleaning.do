@@ -426,7 +426,7 @@ foreach var in stratio lstu compweb govfund grade escs schloc stu_immi {
 						
 		
 	compress
-	keep ${ids} ${scc} ${stu} ${sch} ${outcomes} ${pv_efactors} ${efactors} ${practices} ${practices_wms} ${practices_broad} ${boutcomes} ${policy} ${autonomy}
+	keep ${ids} ${scc} ${stu} ${sch} ${outcomes} ${pv_efactors} ${efactors} ${practices_wms} ${practices_broad} ${boutcomes} ${policy} ${autonomy}
 	
 
 save "cleaning/tempdata/PISA2012_intermediate.dta", replace
