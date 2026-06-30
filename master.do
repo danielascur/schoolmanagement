@@ -132,6 +132,7 @@ do "cleaning/3_pisa2012_cleaning.do"
 do "cleaning/4_pisa2022_cleaning.do" 
 
 	display "End of PISA 2022"	
+
 	
 // Analysis
 do "analysis/table_1.do"

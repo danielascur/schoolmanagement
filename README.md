@@ -1,6 +1,6 @@
 ## Overview
 
-The code in this replication package use Stata to produce all results of the paper "Understanding school management with public data: A new measurement approach and application". The master file run all data creation and analysis do files, generating all exhibits in the paper. The replicator should expect the code to run for about 10 days. Instructions on how to download the data are included in this package. The data itself is public, but not included as the files total over 360GB. Please contact Daniela Scur if you cannot find any of the files online. 
+The code in this replication package use Stata to produce all results of the paper "Understanding school management with public data: A new measurement approach and application". The master file run all data creation and analysis do files, generating all exhibits in the paper. The replicator should expect the code to run for about four days. Instructions on how to download the data are included in this package. The data itself is public, but not included as the files total over 360GB. Please contact Daniela Scur if you cannot find any of the files online. 
 
 
 ## Data Availability and Provenance Statements
@@ -127,16 +127,16 @@ Approximate storage space needed:
 - [ ] 25 MB - 250 MB
 - [ ] 250 MB - 2 GB
 - [ ] 2 GB - 25 GB
-- [] 25 GB - 250 GB
-- [X] > 250 GB (approximately 360 GB)
+- [X] 25 GB - 250 GB
+- [ ] > 250 GB (approximately 360 GB)
 
 - [ ] Not feasible to run on a desktop machine, as described below.
 
 #### Details
 
-The code was last run on a 32-core Linux-based server with Rocky Linux with 256GB of RAM (about 32GB should be enough). Computation took about 10 days.
+The code was last run on a 32-core Linux-based server with Rocky Linux with 256GB of RAM (about 32GB should be enough). Computation took about 4 days.
 
-Researchers may not need to run all the codes, especially if they intend to replicate our management measurement methodology in other countries. This approach can save both time and storage space. The PISA analysis (specifically, calculating scores using plausible values with the repest module) takes approximately eight days to run (about four days per PISA wave) while requiring minimal storage space (< 10 GB). Running the code for Brazilian schools only takes around one day but requires approximately 250 GB of storage. The replication and analysis using the Moreira et al. (2021) datasets takes just a few hours and requires about 85 GB of storage.
+Researchers may not need to run all the codes, especially if they intend to replicate our management measurement methodology in other countries. This approach can save both time and storage space. The PISA analysis (specifically, calculating scores using plausible values with the repest module) takes approximately three days to run (about one and a half day per PISA wave) while requiring minimal storage space (< 10 GB). Running the code for Brazilian schools only takes around one day but requires approximately 20 GB of storage. The replication and analysis using the Moreira et al. (2021) datasets takes just a few hours and requires about 1 GB of storage.
 
 
 
@@ -159,10 +159,10 @@ The code is licensed under a Modified BSD license. See "LICENSE.txt" for details
 - `master.do`: is the do-file that calls all others. Running it must create every single output file. As described above, changing the first lines of it is all you need to do manually.
 
 - `cleaning/`: contains code related to preparing data
-   - `1_pisa2012_cleaning.do`: is the code used to clean the PISA data. Longest part, takes about 8 days to run
-   - `2_pisa2022_cleaning`: is the code used to clean Censo Escolar (School Census) data.
-   - `3_pb_cleaning.do`:is the code used to clean Prova Brasil data.
-   - `4_pol_turnover_cleaning.do`: is the code used to clean Political Turnover data, adapted from Moreira et al. (2021).
+   - `1_pb_cleaning.do`:is the code used to clean Prova Brasil data.
+   - `2_pol_turnover_cleaning.do`: is the code used to clean Political Turnover data, adapted from Moreira et al. (2021).
+   - `3_pisa2012_cleaning.do`: is the code used to clean the PISA data. Longest part, takes about 3 days to run
+   - `4_pisa2022_cleaning`: is the code used to clean Censo Escolar (School Census) data.
    - codes starting with "aux_" are auxiliary codes that are called inside the codes mentioned above.
    
 - `analysis/`: Contain code related to analyzing the data and producing the paper's exhibits 
