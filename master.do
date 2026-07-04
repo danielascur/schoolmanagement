@@ -17,7 +17,10 @@ cd "${dir}"
 set seed 12345
 
 // Opening Log file
-*log using "logs/log_file.log", replace text
+log using "logs/log_file.log", replace text
+
+cap mkdir "cleaning/tempdata"
+
 
 *-----------------------------------------*
 * INSTALLED PROGRAMS
@@ -94,7 +97,6 @@ global stu_sch_avg_ctrl_miss 		"m_lstu_age_sch_avg m_stu_female_sch_avg m_socio_
 	global other_controls   	"urban m_urban" 
 
 
-
 // PISA analysis
 global c_main "schloc1 schloc2 schloc3 schloc4 schloc5 schloc_m stratio_imp stratio_m lstu_imp lstu_m compweb_imp compweb_m govfund_imp govfund_m "
 global c_full "stu_female grade_imp grade_m escs_imp escs_m stu_immi1 stu_immi2 stu_immi3 stu_immi_m" 
@@ -105,9 +107,6 @@ global controls_stud "female_SPB female_SPB_miss white_SPB white_SPB_miss mom_re
 
 // Graph globals
 global region "fcolor(white) lcolor(white) ifcolor(white) ilcolor(white)"
-
-
-
 
 
 
@@ -153,26 +152,24 @@ do "analysis/figure_a4.do"
 do "analysis/figure_a5.do"
 
 
-
-
 // Erasing temporary (temp) folder
 
-// * Listing all files in the folder
-// fs "cleaning/tempdata/*"
-//
-// * Looping through each file and delete it
-// foreach file in `r(files)' {
-//     rm "cleaning/tempdata/`file'"
-// }
-//
-// * Verifying the folder is empty
-// fs "cleaning/tempdata/*"
-//
-// * Erasing empty folder
-// rmdir "cleaning/tempdata"
+* Listing all files in the folder
+fs "cleaning/tempdata/*"
+
+* Looping through each file and delete it
+foreach file in `r(files)' {
+    rm "cleaning/tempdata/`file'"
+}
+
+* Verifying the folder is empty
+fs "cleaning/tempdata/*"
+
+* Erasing empty folder
+rmdir "cleaning/tempdata"
 
 
 // Closing log
-*log close
+log close
 
 

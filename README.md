@@ -2,6 +2,7 @@
 
 The code in this replication package use Stata to produce all results of the paper "Understanding school management with public data: A new measurement approach and application". The master file run all data creation and analysis do files, generating all exhibits in the paper. The replicator should expect the code to run for about four days. Instructions on how to download the data are included in this package. The data itself is public, but not included as the files total over 360GB. Please contact Daniela Scur if you cannot find any of the files online. 
 
+Due to the long run time from the cleaning part, the analysis dataset are also provided (folder analysis/data). All exhibits can be produced from those datasets. We provided the data set "MgmtIndex_ProvaBrasil_StdtYear.dta" divided in 15 parts due to Dataverse's size limitation. If the replicator chooses to start from the analysis dataset, the first step is to append those files.
 
 ## Data Availability and Provenance Statements
 
